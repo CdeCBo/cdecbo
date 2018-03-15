@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1em;
+
+    text-align: center;
+
+    color: $gray;
+    background: #d0d0d0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
