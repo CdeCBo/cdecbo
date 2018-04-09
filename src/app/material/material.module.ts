@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
+import {MatButtonModule, MatCheckboxModule, MatSelectModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 @NgModule({
@@ -13,22 +18,30 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule, 
     MatCheckboxModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   exports: [
-	NoopAnimationsModule,
+    NoopAnimationsModule,
     MatButtonModule, 
     MatCheckboxModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   declarations: []
 })
-export class MaterialModule { 
-	
-	static forRoot(): ModuleWithProviders {
+  export class MaterialModule { 
+
+    static forRoot(){
     return {
-      ngModule: MaterialModule,
+     ngModule: MaterialModule,
       providers: []
     }
   }
