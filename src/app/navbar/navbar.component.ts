@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatTabChangeEvent } from '@angular/material';
+import {Globals} from './../globals';
 
 @Component({
 selector: 'nav-bar',
@@ -7,11 +7,25 @@ templateUrl: './navbar.component.html',
 styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  buttonDisabled: boolean = true;
+
+  
    ngOnInit() {
   }
-constructor() {
-}
+  constructor(private globals: Globals) {
+  }
 
+  
+  onHidden(): void {
+    console.log('Dropdown is hidden');
+  }
+  onShown(): void {
+    console.log('Dropdown is shown');
+  }
+  isOpenChange(): void {
+    console.log('Dropdown state is changed');
+  }
 
+  isCollapsed = true;
+ 
+  
 }

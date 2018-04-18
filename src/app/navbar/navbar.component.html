@@ -1,35 +1,6 @@
- <mat-tab-group>
-	<mat-tab>
-		<ng-template mat-tab-label>
-			<img src="./../assets/iconsmall.png"/>
-		</ng-template>
-		<app-foundation></app-foundation>
-	</mat-tab>
-	<mat-tab>
-		<ng-template mat-tab-label>
-			<button mat-button [matMenuTriggerFor]="menu" style="color:black;">CdeCBo - Eventos</button>
-			<mat-menu #menu="matMenu">
-				<button mat-menu-item >Clubes de Ciencia Bolivia</button>
-				<button mat-menu-item >NetBo</button>
-				<button mat-menu-item >HackBo</button>
-		   </mat-menu>
-		</ng-template>
-		<app-events></app-events>
-		
-	</mat-tab>
-	<mat-tab>
-		<ng-template mat-tab-label>
-			Aplica
-		</ng-template>
-		<app-apply></app-apply>
-	</mat-tab>
-	<mat-tab >
-		<ng-template mat-tab-label>
-			Preguntas Frecuentes
-		</ng-template>
-		<app-faq></app-faq>
-	</mat-tab>
-</mat-tab-group>
-
-<!-- 
-Get Selected menu item num, then pass it as a child to app events -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" [routerLink]="['home']"><img src="./../assets/iconsmall.png"/></a>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
