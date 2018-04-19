@@ -8,7 +8,7 @@ import { ApplyComponent } from './content/apply/apply.component';
 
 const routes: Routes = [
 {path: '', redirectTo: '', pathMatch: 'full'},
-{path: 'home', component: FoundationComponent },
+{path: '', component: FoundationComponent },
 {path: 'faq', component: FaqComponent },
 {path: '**', component: FoundationComponent}
 ];
