@@ -7,13 +7,9 @@ import { CdecboComponent } from './content/events/cdecbo.component';
 import { ApplyComponent } from './content/apply/apply.component';
 
 const routes: Routes = [
-{path: '', redirectTo: 'home', pathMatch: 'full'},
+{path: '', redirectTo: '', pathMatch: 'full'},
 {path: 'home', component: FoundationComponent },
 {path: 'faq', component: FaqComponent },
-{path: 'cdecbo', component: CdecboComponent },
-{path: 'netbo', component: FaqComponent },
-{path: 'hackbo', component: FaqComponent },
-{path: 'apply', component: ApplyComponent },
 {path: '**', component: FoundationComponent}
 ];
 

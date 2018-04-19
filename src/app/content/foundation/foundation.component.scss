@@ -10,13 +10,13 @@ $lightGray: lighten($gray, 30);
 $transitionDuration: .3s;
 $transition: all $transitionDuration ease-in-out;
 
-h1
+#cdecboTitle
 {
     font-size: 2.5em;
 
     margin: 2em 0 .5em;
 }
-h2
+#cdecboBody
 {
     margin-bottom: 3em;
 }
