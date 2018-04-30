@@ -33,10 +33,7 @@ header{
     }
 }
 
-@media  (max-width: 599px){
-    
 
-}
 
 h1{
 font-family: 'Roboto';
@@ -55,3 +52,18 @@ p{
     font-size: 1em;
 }
 
+.texto{
+
+    font-size:3rem;
+
+    }
+    @media  (max-width: 599px){ // mobile
+    
+     
+        .texto{
+
+            font-size:1.5rem;
+            font-weight: bold;
+
+            }
+    }
