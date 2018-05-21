@@ -20,6 +20,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { Recaptcha1Directive } from './recaptcha1.directive';
 import { RecaptchaDirective } from './recaptcha.directive';
 import { HackboHomeComponent } from './hackbo/pages/hackbo-home/hackbo-home.component';
+import { CdecboHomeComponent } from './cdecbo/pages/cdecbo-home/cdecbo-home.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HackboHomeComponent } from './hackbo/pages/hackbo-home/hackbo-home.comp
   ApplyComponent,
   Recaptcha1Directive,
   RecaptchaDirective,
-  HackboHomeComponent
+  HackboHomeComponent,
+  CdecboHomeComponent
   ],
   imports: [
   BrowserModule,
