@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -19,6 +19,7 @@ import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
 import { Recaptcha1Directive } from './recaptcha1.directive';
 import { RecaptchaDirective } from './recaptcha.directive';
+import { HackboHomeComponent } from './hackbo/pages/hackbo-home/hackbo-home.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RecaptchaDirective } from './recaptcha.directive';
   CdecboComponent,
   ApplyComponent,
   Recaptcha1Directive,
-  RecaptchaDirective
+  RecaptchaDirective,
+  HackboHomeComponent
   ],
   imports: [
   BrowserModule,
