@@ -8,13 +8,14 @@ styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
 
-  
+  dropdownCollapsed = true;
+
    ngOnInit() {
   }
   constructor(private globals: Globals) {
   }
 
-  
+
   onHidden(): void {
     console.log('Dropdown is hidden');
   }
@@ -26,6 +27,6 @@ export class NavbarComponent implements OnInit {
   }
 
   isCollapsed = true;
- 
-  
+
+
 }
