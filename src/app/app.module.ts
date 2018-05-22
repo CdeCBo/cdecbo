@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RecaptchaModule } from 'ng-recaptcha';
+import { FacebookModule } from 'ngx-facebook';
 import { Globals } from './globals';
 
 import { AppComponent } from './app.component';
@@ -38,6 +39,7 @@ import { RecaptchaDirective } from './recaptcha.directive';
   FormsModule,
   RecaptchaModule.forRoot(),
   TooltipModule.forRoot(),
+  FacebookModule.forRoot(),
   HttpModule,
   CommonModule,
   CollapseModule.forRoot(),
