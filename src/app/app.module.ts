@@ -20,7 +20,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { Recaptcha1Directive } from './recaptcha1.directive';
 import { RecaptchaDirective } from './recaptcha.directive';
 import { HackboHomeComponent } from './content/hackbo/hackbo-home.component';
-import { CdecboHomeComponent } from './content/cdecbo/pages/cdecbo-home/cdecbo-home.component';
+import { CdecboHomeComponent } from './content/cdecbo/cdecbo-home.component';
 import { SimposiumHomeComponent } from './content/simposium/simposium-home.component';
 
 @NgModule({

@@ -6,7 +6,7 @@ import { FaqComponent } from './content/faq/faq.component';
 import { CdecboComponent } from './content/events/cdecbo.component';
 import { ApplyComponent } from './content/apply/apply.component';
 import {HackboHomeComponent} from './content/hackbo/hackbo-home.component';
-import {CdecboHomeComponent} from './content/cdecbo/pages/cdecbo-home/cdecbo-home.component';
+import {CdecboHomeComponent} from './content/cdecbo/cdecbo-home.component';
 import {SimposiumHomeComponent} from './content/simposium/simposium-home.component';
 
 const routes: Routes = [
