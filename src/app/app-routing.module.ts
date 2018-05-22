@@ -5,9 +5,9 @@ import { FoundationComponent } from './content/foundation/foundation.component';
 import { FaqComponent } from './content/faq/faq.component';
 import { CdecboComponent } from './content/events/cdecbo.component';
 import { ApplyComponent } from './content/apply/apply.component';
-import {HackboHomeComponent} from './hackbo/pages/hackbo-home/hackbo-home.component';
-import {CdecboHomeComponent} from './cdecbo/pages/cdecbo-home/cdecbo-home.component';
-import {SimposiumHomeComponent} from './simposium/pages/simposium-home/simposium-home.component';
+import {HackboHomeComponent} from './content/hackbo/hackbo-home.component';
+import {CdecboHomeComponent} from './content/cdecbo/pages/cdecbo-home/cdecbo-home.component';
+import {SimposiumHomeComponent} from './content/simposium/simposium-home.component';
 
 const routes: Routes = [
 {path: 'home', redirectTo: '', pathMatch: 'full'},

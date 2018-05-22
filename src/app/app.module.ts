@@ -19,9 +19,9 @@ import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
 import { Recaptcha1Directive } from './recaptcha1.directive';
 import { RecaptchaDirective } from './recaptcha.directive';
-import { HackboHomeComponent } from './hackbo/pages/hackbo-home/hackbo-home.component';
-import { CdecboHomeComponent } from './cdecbo/pages/cdecbo-home/cdecbo-home.component';
-import { SimposiumHomeComponent } from './simposium/pages/simposium-home/simposium-home.component';
+import { HackboHomeComponent } from './content/hackbo/hackbo-home.component';
+import { CdecboHomeComponent } from './content/cdecbo/pages/cdecbo-home/cdecbo-home.component';
+import { SimposiumHomeComponent } from './content/simposium/simposium-home.component';
 
 @NgModule({
   declarations: [
