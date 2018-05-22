@@ -12,13 +12,14 @@ import { FoundationComponent } from './content/foundation/foundation.component';
 import { FaqComponent } from './content/faq/faq.component';
 import { CdecboComponent } from './content/events/cdecbo.component';
 import { ApplyComponent } from './content/apply/apply.component';
-
+import { TestimonialsComponent } from './content/testimonials/testimonials.component';
 
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
 import { Recaptcha1Directive } from './recaptcha1.directive';
 import { RecaptchaDirective } from './recaptcha.directive';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RecaptchaDirective } from './recaptcha.directive';
   CdecboComponent,
   ApplyComponent,
   Recaptcha1Directive,
-  RecaptchaDirective
+  RecaptchaDirective,
+  TestimonialsComponent
   ],
   imports: [
   BrowserModule,
