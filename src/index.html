@@ -8,8 +8,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://headervideo.github.io/hvheadervideo/css/fontawesome.min.css">
+	<script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script>
+	<script>
+			window.fbAsyncInit = function() {
+			  FB.init({
+				appId      : '{your-app-id}',
+				xfbml      : true,
+				version    : 'v3.0'
+			  });
+			
+			  FB.AppEvents.logPageView();
+			
+			};
+		  
+			(function(d, s, id){
+			   var js, fjs = d.getElementsByTagName(s)[0];
+			   if (d.getElementById(id)) {return;}
+			   js = d.createElement(s); js.id = id;
+			   js.src = "https://connect.facebook.net/en_US/sdk.js";
+			   fjs.parentNode.insertBefore(js, fjs);
+			 }(document, 'script', 'facebook-jssdk'));
+		  </script>
 </head>
 <body>
+	
 	<app-root></app-root>
 </body>
 </html>

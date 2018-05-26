@@ -1,0 +1,62 @@
+.user {
+    margin-top: 1em;
+    margin-left: 1em;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  #misionbody{
+    background-color: rgba(245, 245, 245, 0.4);
+    p{
+        opacity: 1;
+        font-size:1.2em;
+        font-weight: bolder;
+        font-family: 'Roboto';
+        line-height: normal;
+        margin-right: 1em;
+    }
+  }
+
+  h1{
+      margin-bottom: 2em;
+  }
+  .olm {
+    background-image: url('./../../../assets/alum/olm.png');;
+  }
+  
+  .nmdo {
+    background-image: url('./../../../assets/alum/nmdo.png');;
+  }
+
+  .csb {
+    background-image: url('./../../../assets/alum/csb.jpg');;
+  }
+
+  .jdc {
+    background-image: url('./../../../assets/alum/jdc.jpg');;
+  }
+
+  .cacg {
+    background-image: url('./../../../assets/alum/cacg.jpg');;
+  }
+
+  .vl {
+    background-image: url('./../../../assets/alum/vl.png');;
+  }
+
+  .jea {
+    background-image: url('./../../../assets/alum/jea.jpg');;
+  }
+
+  .gc {
+    background-image: url('./../../../assets/alum/gc.jpg');;
+  }
+
+  .sc {
+    background-image: url('./../../../assets/alum/sc.png');;
+  }

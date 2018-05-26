@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <a class="navbar-brand" [routerLink]="['']"><img src="./../assets/iconsmall.png"/></a>
+  <a class="navbar-brand" [routerLink]="['']">
+    <img src="./../assets/iconsmall.png" />
+  </a>
   <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,7 +20,10 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link"  [routerLink]="['faq']">Preguntas Frecuentes</a>
+        <a class="nav-link" [routerLink]="['testimonios']">Testimonios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['faq']">Preguntas Frecuentes</a>
       </li>
     </ul>
   </div>
