@@ -1,43 +1,203 @@
-* {
-  font-family: monospace, sans-serif;
+p{
+  opacity: 1;
+  font-size:1.2em;
+  font-weight: bolder;
+  font-family: 'Roboto';
+  line-height: normal;
+  margin-right: 1em;
 }
+
 
 #hackbo-header {
-  height: 500px;
-  background-image: linear-gradient(#3d9bd2, #4548b7);
+  padding-bottom: 50px;
+  background-color: #3abba4;
   border-bottom: solid black 1px;
   color: whitesmoke;
-    h1 {
-      padding-top: 20px;
-      font-size: 60px;
-
-    }
-  img {
-    margin-top: 20px;
-  }
-  .img-footer {
-    padding-top: 10px;
-  }
-
-  .hb-fecha {
-    padding-top: 70px;
+  p {
+    margin-right: 0;
   }
 }
 
-#hackbo-descripcion {
-  background-color: #444444;
-  margin: 50px;
-  .hb-video {
-    height: 300px;
-    width: 500px;
 
-    background-color: whitesmoke;
+.hb-titulo {
+  padding-top: 20px;
+  font-size: 60px;
+  img {
+    width: 400px;
+  }
+}
+.hb-logo {
+  margin: 70px auto 70px auto;
+}
+.hb-descripcion {
+  font-size: 20px;
+}
+
+.p-ganadores {
+  font-size: 16px;
+  margin-top: 20px;
+  padding-top: 20px;
+  color: whitesmoke;
+  border-top: solid #535353 1px;
+}
+.primerlugar {
+  border: none;
+}
+
+.hb-fecha {
+  padding-top: 70px;
+}
+
+
+#hackbo-descripcion {
+  padding: 50px;
+
+}
+.div-video {
+  height: 300px;
+}
+.hb-video {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+
+}
+@media (max-width: 1200px) {
+  .hb-video, .div-video {
+    width: 400px;
+    height: 250px;
+
+  }
+}
+@media (max-width: 550px) {
+  .hb-titulo {
+    font-size: 40px;
+    img {
+      width: 300px;
+    }
+  }
+  .hb-video, .div-video {
+    width: 280px;
+    height: 170px;
+  }
+  #hackbo-descripcion {
+    padding: 10px;
+    p {
+      margin-left: 1em;
+    }
+    .row {
+      margin: 0px;
+    }
+  }
+}
+
+#hackbo-faq {
+  color: whitesmoke;
+  border-top: solid #181517 1px;
+  padding-bottom: 200px;
+  background-color: #4a4a4a;
+  h1 {
+    padding-top: 40px;
   }
 
-  #descripcion-texto {
+  .row {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  text-align: center;
+  .f-title {
+    background-color: #0eaf7d;
+    color: #fefefe;
+    padding: 15px 10px 10px 10px;
+    height: 50px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .faq {
+    padding-bottom: 40px;
+
+  }
+  .faq-respuesta {
+    background-color: #fefefe;
+    height: 150px;
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    color: #0a4069;
+    text-align: left;
+  }
+}
+
+#hackbo-equipo {
+  background-color: #fefefe;
+  padding-bottom: 50px;
+  border-top: solid #181517 1px;
+  h1 {
     padding-top: 40px;
-    color: whitesmoke;
+    //color: #0058a5;
+    color: #3abba4;
+  }
 
+}
 
+.card-equipo {
+  img {
+    border-radius: 100%;
+    height: 200px;
+    border: solid lightgray 1px;
+  }
+  text-align: center;
+  padding: 30px 0 30px 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+#hackbo-patrocinadores {
+  background-color: white;
+  border-top: solid #181517 1px;
+  h1 {
+    padding-top: 40px;
+    //color: #0058a5;
+    color: #3abba4;
+  }
+  img {
+    width: 700px;
+  }
+}
+
+#hackbo-ganadores {
+  border-top: solid #181517 1px;
+  color: #fefefe;
+}
+
+#ganadores {
+  background-image: url('../../../assets/hackbo/hackbo18.jpg');
+  background-size: cover;
+  background-position-y: 50px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 400px;
+  h1 {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  #hackbo-patrocinadores {
+    img {
+      width: 500px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  #hackbo-patrocinadores {
+    img {
+      width: 300px;
+    }
   }
 }
