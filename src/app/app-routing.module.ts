@@ -20,7 +20,7 @@ const routes: Routes = [
   {path: 'faq', component: FaqComponent},
   {path: 'hackbo', component: HackboHomeComponent},
   {path: 'cdecbo', component: CdecboHomeComponent},
-  {path: 'simposium', component: SimposiumHomeComponent},
+  // {path: 'simposium', component: SimposiumHomeComponent},
   {path: '**', component: FoundationComponent}
 ];
 
