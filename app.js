@@ -1,10 +1,12 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
+var forceSsl = require('express-force-ssl');
 
 var api = require('./routes/cdecbo');
 var app = express();
 
+app.use(forceSsl);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));

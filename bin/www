@@ -7,19 +7,32 @@
 var app = require('../app');
 var debug = require('debug')('mean-app:server');
 var http = require('http');
+var https = require('https');
+var fs = require('fs');
+var path = require('path');
+
+/**
+ * Read ssl files
+ */
+var options = {
+  ca: fs.readFileSync(path.join(__dirname, 'certificates/clubesdecienciabolivia_com.ca-bundle')),
+  key: fs.readFileSync(path.join(__dirname, 'certificates/cdecbo.key')),
+  cert: fs.readFileSync(path.join(__dirname, 'certificates/clubesdecienciabolivia_com.crt'))
+};
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+var server = https.createServer(options, app);
+http.createServer(app).listen(80);
 
 /**
  * Listen on provided port, on all network interfaces.
