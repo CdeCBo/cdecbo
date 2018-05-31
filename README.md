@@ -17,8 +17,7 @@ Then run `npm run devserver` for an express server. Navigate to `http://localhos
 - Get into cdecbo folder
 - Pull the most recent changes
 - Compile the assets with `npm run build`
-- Run the server in the background `PORT=80 nohup node bin/www &`
-- NOTE: Run in port 80 until we have the ssl implemented
+- Run the server in the background `nohup node bin/www &`
 
 ## Code scaffolding
 

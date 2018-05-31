@@ -11,11 +11,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get("/.well-known/pki-validation/EDEC63215BAF18EDC0619FD57F1D9263.txt", function(req,res) {
-  res.set({"Content-Disposition":"attachment; filename=\"EDEC63215BAF18EDC0619FD57F1D9263.txt\"", "Content-type":"text/plain"});
-  res.send("8A320242B450CEC957EC5F9A35E45FAC7BDBF050AEAC25B3633B5D5F1FC7D1DD comodoca.com 5b0e8b3d5749a");
-});
-
 app.use('/api', api);
 
 // catch 404 and forward to error handler
