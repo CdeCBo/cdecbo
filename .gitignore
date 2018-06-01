@@ -6,6 +6,10 @@ cdecbo.pem
 /tmp
 /out-tsc
 
+# Vim temp files
+*.swo
+*.swp
+
 # dependencies
 /node_modules
 
