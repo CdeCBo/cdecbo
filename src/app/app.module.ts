@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -20,6 +20,9 @@ import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
 import { Recaptcha1Directive } from './recaptcha1.directive';
 import { RecaptchaDirective } from './recaptcha.directive';
+import { HackboHomeComponent } from './content/hackbo/hackbo-home.component';
+import { CdecboHomeComponent } from './content/cdecbo/cdecbo-home.component';
+import { SimposiumHomeComponent } from './content/simposium/simposium-home.component';
 
 
 @NgModule({
@@ -32,6 +35,9 @@ import { RecaptchaDirective } from './recaptcha.directive';
   ApplyComponent,
   Recaptcha1Directive,
   RecaptchaDirective,
+  HackboHomeComponent,
+  CdecboHomeComponent,
+  SimposiumHomeComponent,
   TestimonialsComponent
   ],
   imports: [
