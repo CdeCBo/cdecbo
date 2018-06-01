@@ -15,17 +15,6 @@ export class NavbarComponent implements OnInit {
   constructor(private globals: Globals) {
   }
 
-
-  onHidden(): void {
-    console.log('Dropdown is hidden');
-  }
-  onShown(): void {
-    console.log('Dropdown is shown');
-  }
-  isOpenChange(): void {
-    console.log('Dropdown state is changed');
-  }
-
   isCollapsed = true;
 
 
