@@ -6,7 +6,10 @@ var forceSsl = require('express-force-ssl');
 var api = require('./routes/cdecbo');
 var app = express();
 
-app.use(forceSsl);
+if (process.env.ENVIRONMENT !== "development") {
+  console.log("forcing SSL");
+  app.use(forceSsl);
+}
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));

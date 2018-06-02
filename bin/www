@@ -31,8 +31,14 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-var server = https.createServer(options, app);
-http.createServer(app).listen(80);
+var server;
+if (process.env.ENVIRONMENT === "development") {
+  console.log('yo, hello ma bro');
+  server = http.createServer(app);
+} else {
+  console.log("Production men, be careful");
+  server = https.createServer(options, app);
+}
 
 /**
  * Listen on provided port, on all network interfaces.

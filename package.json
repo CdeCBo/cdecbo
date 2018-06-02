@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "devserver": "./node_modules/nodemon/bin/nodemon.js ./bin/www",
+    "devserver": "PORT=3000 ENVIRONMENT=development node node_modules/nodemon/bin/nodemon.js ./bin/www",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
