@@ -20,8 +20,20 @@ a {
         z-index: 100;
     }
 
+@media (max-width: 770px){
+  nav {
 
+    padding-left: 10em !important;
+    padding-right: 10em !important;
+  }
+}
+@media (max-width: 680px){
+  nav {
 
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+  }
+}
 
 @media (max-width: 599px){
     .navbar-brand{
