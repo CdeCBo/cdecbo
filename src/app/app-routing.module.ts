@@ -11,7 +11,7 @@ import {CdecboHomeComponent} from './content/cdecbo/cdecbo-home.component';
 import {SimposiumHomeComponent} from './content/simposium/simposium-home.component';
 
 import { TestimonialsComponent } from './content/testimonials/testimonials.component';
-
+import { ExtraComponent } from './content/extra/extra.component';
 
 const routes: Routes = [
   {path: 'home', redirectTo: '', pathMatch: 'full'},
@@ -20,6 +20,7 @@ const routes: Routes = [
   {path: 'faq', component: FaqComponent},
   {path: 'hackbo', component: HackboHomeComponent},
   {path: 'cdecbo', component: CdecboHomeComponent},
+  {path: 'allbiotech', component: ExtraComponent},
   // {path: 'simposium', component: SimposiumHomeComponent},
   {path: '**', component: FoundationComponent}
 ];

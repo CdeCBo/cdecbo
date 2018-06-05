@@ -6,6 +6,9 @@ cdecbo.pem
 /tmp
 /out-tsc
 
+#Logs
+nohup.out
+
 # Vim temp files
 *.swo
 *.swp

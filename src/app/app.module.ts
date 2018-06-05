@@ -23,6 +23,7 @@ import { RecaptchaDirective } from './recaptcha.directive';
 import { HackboHomeComponent } from './content/hackbo/hackbo-home.component';
 import { CdecboHomeComponent } from './content/cdecbo/cdecbo-home.component';
 import { SimposiumHomeComponent } from './content/simposium/simposium-home.component';
+import { ExtraComponent } from './content/extra/extra.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { SimposiumHomeComponent } from './content/simposium/simposium-home.compo
   HackboHomeComponent,
   CdecboHomeComponent,
   SimposiumHomeComponent,
-  TestimonialsComponent
+  TestimonialsComponent,
+  ExtraComponent
   ],
   imports: [
   BrowserModule,
