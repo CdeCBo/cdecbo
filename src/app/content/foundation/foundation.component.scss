@@ -13,7 +13,7 @@ $lightGray: lighten($gray, 30);
     display: block;
     overflow: auto;
 }
-#misionbody{
+#misionbody, #contactbody{
     background-color: rgba(245, 245, 245, 0.4);
     p{
         opacity: 1;
@@ -21,9 +21,9 @@ $lightGray: lighten($gray, 30);
 }
 header{
 
-   
+
     h1{
-       
+
         color:whitesmoke;
         background-color: #1e1e1e;
     }
@@ -59,8 +59,8 @@ p{
     color: white;
     }
  //   @media  (max-width: 599px){ // mobile
-    
-     
+
+
   //      .texto{
 
    //         font-size:1.5rem;
