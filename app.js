@@ -9,9 +9,13 @@ var app = express();
 app.use(forceSsl);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
-app.use(express.static(path.join(__dirname, 'dist')));
+// app.use(express.static(path.join(__dirname, 'dist')));
+
 
 app.use('/api', api);
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
