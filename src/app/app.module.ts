@@ -16,7 +16,7 @@ import { ApplyComponent } from './content/apply/apply.component';
 import { TestimonialsComponent } from './content/testimonials/testimonials.component';
 
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
+import {CollapseModule, BsDropdownModule, ModalModule} from 'ngx-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
 import { Recaptcha1Directive } from './recaptcha1.directive';
 import { RecaptchaDirective } from './recaptcha.directive';
@@ -53,6 +53,7 @@ import { ExtraComponent } from './content/extra/extra.component';
   CollapseModule.forRoot(),
   BsDropdownModule.forRoot(),
   AppRoutingModule,
+  ModalModule.forRoot()
 
   ],
   providers: [Globals],

@@ -40,3 +40,24 @@ a{
     font-family: 'Roboto';
 }
 
+.modal-content {
+  background-color: #00978a;
+  color: #fefefe;
+  line-height: normal;
+  height: 300px;
+  width: 350px;
+}
+
+.modal-header {
+  border: none;
+  h4 {
+    font-size: 30px;
+  }
+}
+.countdown {
+  padding-top: 30px;
+  font-size: 30px;
+  span {
+    font-size: 20px;
+  }
+}
