@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cdecbo-home.component.scss']
 })
 export class CdecboHomeComponent implements OnInit {
+  isCollapsed = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
 
   constructor() { }
 
