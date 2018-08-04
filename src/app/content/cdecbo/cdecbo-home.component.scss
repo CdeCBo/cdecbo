@@ -32,7 +32,7 @@ section {
 
 }
 
-#clubes {
+.clubes {
   padding-top: 50px;
   padding-bottom: 50px;
   opacity: 1;
@@ -47,26 +47,34 @@ section {
   }
 }
 
-.club {
+.clubScz {
   padding: 20px;
-  background-color: #4357AD;
+  background-color: #61b674;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+.clubDC {
+  padding: 20px;
+  background-color: #ce454e;
   margin-bottom: 10px;
   border-radius: 20px;
   cursor: pointer;
 }
 .club-titulo {
-  color: #d1d1d1;
+  color:  white;
   font-size: 30px;
   //color: #1f1f1f;
 }
 
 .club-instructor {
-  color: #c5c5c5;
+  color: white;
 }
 
 .club-descripcion {
   margin-top: 20px;
-  color: #dbdbdb;
+  color: white;
   //background-color: whitesmoke;
 }
 
