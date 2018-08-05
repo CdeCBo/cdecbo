@@ -20,6 +20,7 @@ const routes: Routes = [
   {path: 'faq', component: FaqComponent},
   {path: 'hackbo', component: HackboHomeComponent},
   {path: 'cdecbo', component: CdecboHomeComponent},
+  {path: 'cdecbo/:id', component: CdecboHomeComponent},
   {path: 'allbiotech', component: ExtraComponent},
   // {path: 'simposium', component: SimposiumHomeComponent},
   {path: '**', component: FoundationComponent}

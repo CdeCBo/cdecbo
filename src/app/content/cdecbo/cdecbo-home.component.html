@@ -10,30 +10,37 @@
   <section id="losclubes" class="container">
     <div class="row justify-content-center" style="padding-top: 50px">
       <div class="col-sm-6 col-12">
-        <img style="height: 200px" src="assets/cdecboSantaCruz.png">
+        <div>
+          <img (click)="showClub('scz')" style="height: 200px; cursor: pointer" src="assets/cdecboSantaCruz.png">
+        </div>
+        <button (click)="showClub('scz')" class="btn btn-success">Clubes Santa Cruz</button>
       </div>
       <div class="col-sm-6 col-12">
-        <img style="height: 200px" src="assets/cdecboWashington.png">
+        <div>
+          <img (click)="showClub('dc')" style="height: 200px; cursor: pointer" src="assets/cdecboWashington.png">
+        </div>
+        <button (click)="showClub('dc')" class="btn btn-danger">Clubes Washington D.C.</button>
       </div>
     </div>
 
-    <h1>Los Clubes</h1>
-    <h2 class="descripcion-talleres">
-      Talleres intensivos de 5 días basados en proyectos
-      dictados por expertos mundiales en los temas,
-      quienes vienen a Bolivia a inspirar a la siguiente generación de científicos
-      y emprendedores.
-    </h2>
+    <div *ngIf="showScz">
+      <h1>Clubes 2019</h1>
+      <h2 class="descripcion-talleres">
+        Talleres intensivos de 5 días basados en proyectos
+        dictados por expertos mundiales en los temas,
+        quienes vienen a Bolivia a inspirar a la siguiente generación de científicos
+        y emprendedores.
+      </h2>
 
-    <div id="clubes">
-      <h2>Clubes 2019</h2>
-      <div class="club">
-        <div (click)="isCollapsed[0] = !isCollapsed[0]">
+      <div class="clubes">
+      <h2>Santa Cruz de la Sierra</h2>
+      <div class="clubScz" (click)="isCollapsed[0] = !isCollapsed[0]">
+        <div>
           <div class="club-titulo">
             Diseñándose para crear
           </div>
           <div class="club-instructor">
-            Instructor: Wilson Claure (Stanford University)
+            Instructor: Wilson Claure (Georgetown University)
           </div>
         </div>
         <div class="club-descripcion" [collapse]="isCollapsed[0]">
@@ -44,8 +51,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[1] = !isCollapsed[1]">
+      <div class="clubScz" (click)="isCollapsed[1] = !isCollapsed[1]">
+        <div>
           <div class="club-titulo">
             Mirando al mundo desde los ojos de un científico social
           </div>
@@ -59,8 +66,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[2] = !isCollapsed[2]">
+      <div class="clubScz" (click)="isCollapsed[2] = !isCollapsed[2]">
+        <div>
           <div class="club-titulo">
             Neurociencia Regenerativa
           </div>
@@ -74,8 +81,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[3] = !isCollapsed[3]">
+      <div class="clubScz" (click)="isCollapsed[3] = !isCollapsed[3]">
+        <div>
           <div class="club-titulo">
             Combatiendo epidemias
           </div>
@@ -90,8 +97,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[4] = !isCollapsed[4]">
+      <div class="clubScz" (click)="isCollapsed[4] = !isCollapsed[4]">
+        <div>
           <div class="club-titulo">
             La tecnología se encuentra con los negocios
           </div>
@@ -105,8 +112,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[5] = !isCollapsed[5]">
+      <div class="clubScz" (click)="isCollapsed[5] = !isCollapsed[5]">
+        <div>
           <div class="club-titulo">
             De micro a macro: principios de microscopía
           </div>
@@ -119,8 +126,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[6] = !isCollapsed[6]">
+      <div class="clubScz" (click)="isCollapsed[6] = !isCollapsed[6]">
+        <div>
           <div class="club-titulo">
             De la anatomía al diseño
           </div>
@@ -135,8 +142,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[7] = !isCollapsed[7]">
+      <div class="clubScz" (click)="isCollapsed[7] = !isCollapsed[7]">
+        <div>
           <div class="club-titulo">
             Diseño de proteínas: creando soluciones para la sociedad del mañana
           </div>
@@ -149,8 +156,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[8] = !isCollapsed[8]">
+      <div class="clubScz" (click)="isCollapsed[8] = !isCollapsed[8]">
+        <div>
           <div class="club-titulo">
             Big Data: Visualización & Modelos
           </div>
@@ -163,8 +170,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[9] = !isCollapsed[9]">
+      <div class="clubScz" (click)="isCollapsed[9] = !isCollapsed[9]">
+        <div>
           <div class="club-titulo">
             Bioprospeccion: ¿El futuro de los fármacos?
           </div>
@@ -177,8 +184,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[10] = !isCollapsed[10]">
+      <div class="clubScz" (click)="isCollapsed[10] = !isCollapsed[10]">
+        <div>
           <div class="club-titulo">
             Explorando el Cáncer
           </div>
@@ -191,8 +198,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[11] = !isCollapsed[11]">
+      <div class="clubScz" (click)="isCollapsed[11] = !isCollapsed[11]">
+        <div>
           <div class="club-titulo">
             Robot social del futuro
           </div>
@@ -221,8 +228,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[12] = !isCollapsed[12]">
+      <div class="clubScz" (click)="isCollapsed[12] = !isCollapsed[12]">
+        <div>
           <div class="club-titulo">
             Desarrollando habilidades para Bioemprender
           </div>
@@ -237,8 +244,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[13] = !isCollapsed[13]">
+      <div class="clubScz" (click)="isCollapsed[13] = !isCollapsed[13]">
+        <div>
           <div class="club-titulo">
             Aplicación de la tecnología del ADN recombinante
           </div>
@@ -251,8 +258,8 @@
           </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[14] = !isCollapsed[14]">
+      <div class="clubScz" (click)="isCollapsed[14] = !isCollapsed[14]">
+        <div>
           <div class="club-titulo">
             Descubriendo el cerebro humano a través de la secuenciación
           </div>
@@ -265,8 +272,8 @@
         </div>
       </div>
 
-      <div class="club">
-        <div (click)="isCollapsed[15] = !isCollapsed[15]">
+      <div class="clubScz" (click)="isCollapsed[15] = !isCollapsed[15]">
+        <div>
           <div class="club-titulo">
             nn
           </div>
@@ -279,7 +286,97 @@
         </div>
       </div>
     </div>
+    </div>
 
+    <div *ngIf="!showScz">
+      <h1>Clubes 2019 </h1>
+      <h2 class="descripcion-talleres">
+        Talleres intensivos de 5 días basados en proyectos
+        dictados por expertos mundiales en los temas,
+        quienes vienen a Bolivia a inspirar a la siguiente generación de científicos
+        y emprendedores.
+      </h2>
+
+      <div class="clubes">
+        <h2>Washington D.C.</h2>
+        <div class="clubDC" (click)="isCollapsedDC[0] = !isCollapsedDC[0]">
+          <div>
+            <div class="club-titulo">
+              Diseñándose para crear
+            </div>
+            <div class="club-instructor">
+              Instructor: Wilson Claure (Georgetown University)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsedDC[0]">
+            El objetivo principal de este curso es preparar a los estudiantes para la resolución de problemas complejos y modernos a través de Design Thinking. Se llevarán a cabo varias actividades de creación para desarrollar el pensamiento de diseñador en los participantes y para practicar Design Thinking. Durante la semana habrá un “Design Challenge” donde aplicaremos los métodos a la resolución de problemas pertinentes a la sociedad Boliviana como la creación de ciudades de conocimiento, y un aeropuerto hub. Paralelamente los estudiantes aprenderán a evaluar científicamente el rendimiento de equipos de Design Thinking con herramientas creadas en Stanford.
+            El trabajo en equipo es necesario para el éxito con Design Thinking. Estos equipos son grupos multidisciplinarios (científicos, ingenieros, artistas) que colaboran para crear nuevos productos o soluciones en diferentes áreas (industria o ambiente académico). En el pasado, una limitación para la investigación científica de estos equipos era la falta de algún instrumento de medida, que sea fiable y repetible, para evaluar el rendimiento de los equipos. Con el desarrollo de IDN Tool en Stanford, ahora se puede investigar científicamente, evaluar el rendimiento, e identificar las áreas de mejora de equipos de Design Thinking. En el club de ciencias “Diseñándose para crear” re-crearemos este novedoso instrumento (hardware + Python) y así los estudiantes aprenderán a usarlo para investigaciones de Design Thinking.
+            Finalmente, el curso está estructurado alrededor de proyectos. Esto significa que los estudiantes recibirán proyectos en los que trabajarán en equipos, y los instructores actuarán como entrenadores. Además, habrá mucha discusión a lo largo del club, y oportunidades para comunicarse con múltiples expertos en el campo de Design Thinking y con líderes Bolivianos en los campos de tecnología, aeronáutica, y academia. Finalmente, se visitara un lugar pertinente al proyecto, para exponer a los participantes al ámbito del problema que resolverán.
+
+          </div>
+        </div>
+
+        <div class="clubDC" (click)="isCollapsedDC[1] = !isCollapsedDC[1]">
+          <div>
+            <div class="club-titulo">
+              Mirando al mundo desde los ojos de un científico social
+            </div>
+            <div class="club-instructor">
+              Instructor: Bruno Lopez Videla (University of California San Diego)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsedDC[1]">
+            ¿Cómo podemos anticipar si una política pública, un programa social, o un proyecto de innovación, cumplirán con su propósito? ¿Cómo podemos utilizar fenómenos climatológicos para estudiar la adaptación en las expectativas de los agricultores? ¿Se puede experimentar como científicos sociales fuera de un laboratorio? En este club se responderán este tipo de preguntas. Además, los estudiantes aprenderán técnicas para poder identificar efectos causales que les servirán para evaluar fenómenos sociales y predecir el comportamiento de agentes económicos. Este curso presentará temas como: quasi-experimentos sociales, ensayos controlados aleatorios, experimentos de campo, y otros. Al finalizar el club, los estudiantes serán capaces de diferenciar correlaciones de efectos causales, y contarán con las técnicas necesarias para evaluar científicamente proyectos de impacto social.
+            Prerrequisito: Este curso requiere un nivel intermedio o avanzado en matemáticas y estadísticas.
+          </div>
+        </div>
+
+        <div class="clubDC" (click)="isCollapsedDC[2] = !isCollapsedDC[2]">
+          <div>
+            <div class="club-titulo">
+              Robot social del futuro
+            </div>
+            <div class="club-instructor">
+              Instructor: Houston Claure (Cornell University)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsedDC[2]">
+            Tradicionalmente, robots son usados en entornos industriales levantando
+            materiales pesados, haciendo trabajos repetitivos o talvez peligrosos.
+            Actualmente hay un empuje de la ciencia  para el desarrollo de un
+            nuevo tipo de robots conocidos como robots sociales, los cuales son
+            creados para nuevas situaciones como: trabajando lado a lado con
+            humanos en la casa, en los hospitales, y también en los colegios. Para
+            soportar este avance, es importante investigar cómo crear y programar
+            robots para que interactúen en estos ambientes y también entender como
+            los humanos interactúan con robots. La clase “Robot Social del Futuro”
+            será una introducción al campo de Human-Robot Interacción (HRI), donde
+            estudiantes aprenderán sobre las investigaciones actuales con robots
+            personales, los algoritmos de inteligencia artificial, y como
+            desarrollar experimentos con humanos y robots. Al fin de este curso
+            los estudiantes tendrán un conocimiento más profundo sobre el campo de
+            Human Robot Interaction (HRI), entenderán más sobre la inteligencia
+            artificial, y finalmente   crearán  sus propios robots para examinar y
+            tener la experiencia de cómo la gente trabaja con su robot.
+          </div>
+        </div>
+
+        <div class="clubDC" (click)="isCollapsedDC[3] = !isCollapsedDC[3]">
+          <div>
+            <div class="club-titulo">
+              ¿Cómo nuestro sistema inmune nos defiende del cáncer?
+            </div>
+            <div class="club-instructor">
+              Instructor: Omar Gandarilla (Harvard Medical School)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsedDC[3]">
+            El sistema inmune nos defiende y combate muchos microbios, como los virus que causan el resfriado común o las bacterias que entran por las heridas. Nuestras defensas pueden también aprender a protegernos de situaciones más complejas y pueden hacerlo gracias a las lecciones aprendidas mediante la vacunación. Uno de estos ejemplos es como el virus de la polio puede enseñar al sistema inmune a reconocer y eliminar este virus de nuestro organismo en el caso de que quiera entrar a nuestro cuerpo y atacarnos. En años recientes los científicos han observado que el sistema inmune también puede atacar otro tipo de enfermedad, el cáncer. El cáncer ocurre cuando las células pierden el control y proliferan sin límites. La buena noticia es que podemos educar el sistema inmune en pacientes con cáncer, esto se llama inmunoterapia. En este curso aprenderemos como nuestras defensas pueden aprender a atacar y eliminar los microorganismos patógenos, así como también a eliminar el cáncer. A la vez verán en el componente practico como los linfocitos al reconocer el peligro organizan la defensa del organismo regulando señales dentro de ellos para prepararse para el contra-ataque.
+        </div>
+
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="como-aplicar" class="container">

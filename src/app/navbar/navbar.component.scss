@@ -2,7 +2,10 @@ a {
 	 color: #605969;
     text-decoration: none;
 }
-
+.navbar {
+  background-color: white!important;
+  border-bottom: solid lightgray 1px;
+}
 .important-btn{
    background-color: #00978a;
    color: whitesmoke !important;
@@ -12,31 +15,34 @@ a {
     nav{
         padding-top: 0.1em !important;
         padding-bottom: 0.2em !important;
-        padding-left: 15em !important;
-        padding-right: 15em !important;
+        padding-left: 5em !important;
+        padding-right: 5em !important;
 
         position: sticky;
         top: 0;
         z-index: 100;
     }
 
-@media (max-width: 770px){
+@media (max-width: 850px){
   nav {
-
-    padding-left: 10em !important;
-    padding-right: 10em !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
   }
 }
-@media (max-width: 680px){
-  nav {
-
-    padding-left: 3em !important;
-    padding-right: 3em !important;
-  }
-}
+//@media (max-width: 680px){
+//  nav {
+//
+//    padding-left: 3em !important;
+//    padding-right: 3em !important;
+//  }
+//}
 
 
 a{
     font-family: 'Roboto';
 }
 
+.logo {
+  height: 60px;
+}
