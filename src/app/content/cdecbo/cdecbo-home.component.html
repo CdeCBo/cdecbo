@@ -1,4 +1,4 @@
-<div style="min-height: 1000px; background-color: #fefefe">
+<div style="min-height: 1000px; background-color: whitesmoke">
   <section id="cdec" class="container">
     <img src="../../../assets/cdecboIsologotipo.png" style="width: 300px; border-radius: 100%">
       <h3 id="cdec-mision">
@@ -9,31 +9,32 @@
 
   <section id="losclubes" class="container">
     <div class="row justify-content-center" style="padding-top: 50px">
+      <h1 style="padding-button: padding-bottom: 20px;">Dale click en la opcion de clubes que te interese!</h1>
       <div class="col-sm-6 col-12">
         <div>
           <img (click)="showClub('scz')" style="height: 200px; cursor: pointer" src="assets/cdecboSantaCruz.png">
         </div>
-        <button (click)="showClub('scz')" class="btn btn-success">Clubes Santa Cruz</button>
+        <button (click)="showClub('scz')" class="btn btn-success">Lista de Clubes Santa Cruz</button>
       </div>
       <div class="col-sm-6 col-12">
         <div>
           <img (click)="showClub('dc')" style="height: 200px; cursor: pointer" src="assets/cdecboWashington.png">
         </div>
-        <button (click)="showClub('dc')" class="btn btn-danger">Clubes Washington D.C.</button>
+        <button (click)="showClub('dc')" class="btn btn-danger"> Lista de Clubes Washington D.C.</button>
       </div>
     </div>
 
     <div *ngIf="showScz">
-      <h1>Clubes 2019</h1>
+      <h1>Clubes version 2019</h1>
       <h2 class="descripcion-talleres">
         Talleres intensivos de 5 días basados en proyectos
-        dictados por expertos mundiales en los temas,
+        dictados por expertos en los temas,
         quienes vienen a Bolivia a inspirar a la siguiente generación de científicos
         y emprendedores.
       </h2>
 
       <div class="clubes">
-      <h2>Santa Cruz de la Sierra</h2>
+      <h1 style="padding-bottom: 15px;">Santa Cruz de la Sierra</h1>
       <div class="clubScz" (click)="isCollapsed[0] = !isCollapsed[0]">
         <div>
           <div class="club-titulo">
@@ -289,12 +290,12 @@
     </div>
 
     <div *ngIf="!showScz">
-      <h1>Clubes 2019 </h1>
+      <h1>Clubes version 2019 </h1>
       <h2 class="descripcion-talleres">
         Talleres intensivos de 5 días basados en proyectos
-        dictados por expertos mundiales en los temas,
-        quienes vienen a Bolivia a inspirar a la siguiente generación de científicos
-        y emprendedores.
+        dictados por expertos en los temas,
+        quienes estaran presente en Washington DC para inspirar a la siguiente generación de científicos
+        y emprendedores Bolivianos.
       </h2>
 
       <div class="clubes">
@@ -382,7 +383,7 @@
   <section id="como-aplicar" class="container">
     <h1>Como aplicar</h1>
     <h2 class="descripcion-talleres">
-      Anunciamos una convocatoria cada 6 de Agosto, habilitada por 30 dias, donde alumnos pueden aplicar por medio de esta página.     </h2>
+      La convocatoria empieza el 6 de Agosto, habilitada por 30 dias. Alumnos pueden aplicar por medio de esta página en el boton de arriba que dice "Aplica CdeCBo".     </h2>
       <h2 class="descripcion-talleres">
       No lo olvides!
       </h2>
