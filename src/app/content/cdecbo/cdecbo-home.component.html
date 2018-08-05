@@ -9,7 +9,7 @@
 
   <section id="losclubes" class="container">
     <div class="row justify-content-center" style="padding-top: 50px">
-      <h1 style="padding-button: 20px;">Dale click en la opcion de clubes que te interese!</h1>
+      <h1 style="padding-bottom: 20px;">Dale click en la opcion de clubes que te interese!</h1>
       <div class="col-sm-6 col-12">
         <div>
           <img (click)="showClub('Scz')" style="height: 200px; cursor: pointer" src="assets/cdecboSantaCruz.png">
@@ -403,9 +403,15 @@
   </section>
 
   <section id="como-aplicar" class="container">
-    <h1>Como aplicar</h1>
-    <h2 class="descripcion-talleres">
-      Los Alumnos pueden aplicar a los clubes hasta el 30 de septiembre haciendo click en: </h2>
+    <h1>¿Cómo aplicar?</h1>
+    <h2 class="descripcion-talleres" *ngIf="!showDC && !showScz">
+      Los Alumnos pueden aplicar a los clubes en Santa Cruz hasta el 30 de septiembre de 2018 y para los clubes en Washington D.C. hasta el 15 de septiembre de 2018 haciendo click en: </h2>
+    <h2 class="descripcion-talleres" *ngIf="showScz">
+      Los Alumnos pueden aplicar a los clubes en Santa Cruz hasta el 30 de septiembre de 2018 haciendo click en: </h2>
+    <h2 class="descripcion-talleres" *ngIf="showDC">
+      Los Alumnos pueden aplicar a los clubes en Washington D.C. hasta el 15 de septiembre haciendo click en: </h2>
+
+
     <a href="https://cdecbo.typeform.com/to/BO2nhR">
       <button class="btn btn-success">Aplica ya!</button>
     </a>
