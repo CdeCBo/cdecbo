@@ -13,39 +13,38 @@ a {
 }
 
     nav{
-        padding-top: 0.1em !important;
-        padding-bottom: 0.2em !important;
-        padding-left: 5em !important;
-        padding-right: 5em !important;
+        padding-top: 0.1em;
+        padding-bottom: 0.2em;
+        padding-left: 5em;
+        padding-right: 5em;
 
         position: sticky;
         top: 0;
         z-index: 100;
     }
+.logo {
+  height: 60px;
+}
 
-@media (max-width: 850px){
+@media (max-width: 920px){
   nav {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0;
   }
 }
-//@media (max-width: 680px){
-//  nav {
-//
-//    padding-left: 3em !important;
-//    padding-right: 3em !important;
-//  }
-//}
+@media (max-width: 400px){
+  .logo {
+    height: 40px;
+  }
+}
 
 
 a{
     font-family: 'Roboto';
 }
 
-.logo {
-  height: 60px;
-}
+
 
 .navlinkPage {
   margin-top: 7px;
