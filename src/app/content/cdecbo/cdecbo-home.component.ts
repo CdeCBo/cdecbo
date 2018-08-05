@@ -9,13 +9,20 @@ import {ActivatedRoute} from '@angular/router';
 export class CdecboHomeComponent implements OnInit {
   isCollapsed = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
   isCollapsedDC = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
-  showScz = true;
+  showScz = false;
+  showDC = false;
 
   showClub(lugar) {
-    if (lugar === 'scz') {
+    if (lugar === 'Scz') {
       this.showScz = true;
     } else {
       this.showScz = false;
+    }
+
+    if (lugar === 'DC') {
+      this.showDC = true;
+    } else {
+      this.showDC = false;
     }
   }
 
@@ -26,10 +33,15 @@ export class CdecboHomeComponent implements OnInit {
   ngOnInit() {
     if (this.route.snapshot.paramMap.get('id')) {
       if (this.route.snapshot.paramMap.get('id') === 'DC') {
-        this.showScz = false;
+        this.showDC = true;
       } else {
-        this.showScz = true;
+        this.showDC = false;
       }
+    }
+    if (this.route.snapshot.paramMap.get('id') === 'Scz') {
+      this.showScz = true;
+    } else {
+      this.showScz = false;
     }
   }
 

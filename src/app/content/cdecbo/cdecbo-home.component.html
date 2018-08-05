@@ -9,18 +9,18 @@
 
   <section id="losclubes" class="container">
     <div class="row justify-content-center" style="padding-top: 50px">
-      <h1 style="padding-button: padding-bottom: 20px;">Dale click en la opcion de clubes que te interese!</h1>
+      <h1 style="padding-button: 20px;">Dale click en la opcion de clubes que te interese!</h1>
       <div class="col-sm-6 col-12">
         <div>
-          <img (click)="showClub('scz')" style="height: 200px; cursor: pointer" src="assets/cdecboSantaCruz.png">
+          <img (click)="showClub('Scz')" style="height: 200px; cursor: pointer" src="assets/cdecboSantaCruz.png">
         </div>
-        <button (click)="showClub('scz')" class="btn btn-success">Lista de Clubes Santa Cruz</button>
+        <button (click)="showClub('Scz')" class="btn btn-success">Lista de Clubes Santa Cruz</button>
       </div>
       <div class="col-sm-6 col-12">
         <div>
-          <img (click)="showClub('dc')" style="height: 200px; cursor: pointer" src="assets/cdecboWashington.png">
+          <img (click)="showClub('DC')" style="height: 200px; cursor: pointer" src="assets/cdecboWashington.png">
         </div>
-        <button (click)="showClub('dc')" class="btn btn-danger"> Lista de Clubes Washington D.C.</button>
+        <button (click)="showClub('DC')" class="btn btn-danger"> Lista de Clubes Washington D.C.</button>
       </div>
     </div>
 
@@ -35,10 +35,11 @@
 
       <div class="clubes">
       <h1 style="padding-bottom: 15px;">Santa Cruz de la Sierra</h1>
+      <h4>Dale click al club que te interese!</h4>
       <div class="clubScz" (click)="isCollapsed[0] = !isCollapsed[0]">
         <div>
           <div class="club-titulo">
-            Diseñándose para crear
+            Club 1: Diseñándose para crear
           </div>
           <div class="club-instructor">
             Instructor: Wilson Claure (Georgetown University)
@@ -55,7 +56,7 @@
       <div class="clubScz" (click)="isCollapsed[1] = !isCollapsed[1]">
         <div>
           <div class="club-titulo">
-            Mirando al mundo desde los ojos de un científico social
+            Club 2: Mirando al mundo desde los ojos de un científico social
           </div>
           <div class="club-instructor">
             Instructor: Bruno Lopez Videla (University of California San Diego)
@@ -70,7 +71,7 @@
       <div class="clubScz" (click)="isCollapsed[2] = !isCollapsed[2]">
         <div>
           <div class="club-titulo">
-            Neurociencia Regenerativa
+            Club 3: Neurociencia Regenerativa
           </div>
           <div class="club-instructor">
             Instructor: Giovanni Carosso (Johns Hopkins University)
@@ -85,7 +86,7 @@
       <div class="clubScz" (click)="isCollapsed[3] = !isCollapsed[3]">
         <div>
           <div class="club-titulo">
-            Combatiendo epidemias
+            Club 4: Combatiendo epidemias
           </div>
           <div class="club-instructor">
             Instructor: David Soeiro (Universidade Federal de Minas Gerais)
@@ -101,7 +102,7 @@
       <div class="clubScz" (click)="isCollapsed[4] = !isCollapsed[4]">
         <div>
           <div class="club-titulo">
-            La tecnología se encuentra con los negocios
+            Club 5: La tecnología se encuentra con los negocios
           </div>
           <div class="club-instructor">
             Instructor: Pablo Contreras (Salesforce)
@@ -116,7 +117,7 @@
       <div class="clubScz" (click)="isCollapsed[5] = !isCollapsed[5]">
         <div>
           <div class="club-titulo">
-            De micro a macro: principios de microscopía
+            Club 6: De micro a macro: principios de microscopía
           </div>
           <div class="club-instructor">
             Instructora: Diana Alatriste (Berlin University of Medicine)
@@ -130,7 +131,7 @@
       <div class="clubScz" (click)="isCollapsed[6] = !isCollapsed[6]">
         <div>
           <div class="club-titulo">
-            De la anatomía al diseño
+            Club 7: De la anatomía al diseño
           </div>
           <div class="club-instructor">
             Instructor: Sebastián Torres Montoya (Hospital General de Medellín)
@@ -146,7 +147,7 @@
       <div class="clubScz" (click)="isCollapsed[7] = !isCollapsed[7]">
         <div>
           <div class="club-titulo">
-            Diseño de proteínas: creando soluciones para la sociedad del mañana
+            Club 8: Diseño de proteínas: creando soluciones para la sociedad del mañana
           </div>
           <div class="club-instructor">
             Instructor: Oscar Hernández Murillo (Harvard University)
@@ -160,7 +161,7 @@
       <div class="clubScz" (click)="isCollapsed[8] = !isCollapsed[8]">
         <div>
           <div class="club-titulo">
-            Big Data: Visualización & Modelos
+            Club 9: Big Data: Visualización & Modelos
           </div>
           <div class="club-instructor">
             Instructor: Abel de Andreis (Google)
@@ -174,7 +175,7 @@
       <div class="clubScz" (click)="isCollapsed[9] = !isCollapsed[9]">
         <div>
           <div class="club-titulo">
-            Bioprospeccion: ¿El futuro de los fármacos?
+            Club 10: Bioprospeccion: ¿El futuro de los fármacos?
           </div>
           <div class="club-instructor">
             Instructora: Elisa Chaparro (Del lab al campo)
@@ -188,7 +189,7 @@
       <div class="clubScz" (click)="isCollapsed[10] = !isCollapsed[10]">
         <div>
           <div class="club-titulo">
-            Explorando el Cáncer
+            Club 11: Explorando el Cáncer
           </div>
           <div class="club-instructor">
             Instructora: Yara Rodríguez (Northwestern University)
@@ -202,7 +203,7 @@
       <div class="clubScz" (click)="isCollapsed[11] = !isCollapsed[11]">
         <div>
           <div class="club-titulo">
-            Robot social del futuro
+            Club 12: Robot social del futuro
           </div>
           <div class="club-instructor">
             Instructor: Houston Claure (Cornell University)
@@ -232,7 +233,7 @@
       <div class="clubScz" (click)="isCollapsed[12] = !isCollapsed[12]">
         <div>
           <div class="club-titulo">
-            Desarrollando habilidades para Bioemprender
+            Club 13: Desarrollando habilidades para Bioemprender
           </div>
           <div class="club-instructor">
             Instructora: Lilian Gonzalez (Technological University of Berlin)
@@ -248,7 +249,7 @@
       <div class="clubScz" (click)="isCollapsed[13] = !isCollapsed[13]">
         <div>
           <div class="club-titulo">
-            Aplicación de la tecnología del ADN recombinante
+            Club 14: Aplicación de la tecnología del ADN recombinante
           </div>
           <div class="club-instructor">
             Instructora: Soad Bohorquez (Harvard Medical School)
@@ -262,7 +263,7 @@
       <div class="clubScz" (click)="isCollapsed[14] = !isCollapsed[14]">
         <div>
           <div class="club-titulo">
-            Descubriendo el cerebro humano a través de la secuenciación
+            Club 15: Descubriendo el cerebro humano a través de la secuenciación
           </div>
           <div class="club-instructor">
             Instructora: Beatriz Alvarado (University of California San Francisco)
@@ -276,23 +277,43 @@
       <div class="clubScz" (click)="isCollapsed[15] = !isCollapsed[15]">
         <div>
           <div class="club-titulo">
-            nn
+            Club 16: Del lujo a la necesidad, tecnologías accesibles
           </div>
           <div class="club-instructor">
             Instructor: Daniel Cuartas
           </div>
         </div>
         <div class="club-descripcion" [collapse]="isCollapsed[15]">
-          nn
+          El mejor smartphone, el mejor automóvil, el mejor televisor, el mejor computador: lujos que muchos buscamos tener; fueron creados en muchas ocasiones para facilitarnos tareas, sin embargo, algunos de ellos no son necesidades, muchos son simplemente ligados a un diseño atrayente y a un símbolo de estatus y “buen gusto”.
+          Es común relacionar la palabra tecnología con el alto costo que se debe pagar por ella ¿Y si esta tecnología ya no es un lujo sino una necesidad en el caso de estar en situación de discapacidad?
+          Según la ONU, 8 de cada 10 personas con discapacidad están en condiciones de pobreza, ¿cómo pueden entonces estas personas acceder a dispositivos de ayuda sin pagar fortunas y cómo se diseñan máquinas de bajo costo para ellos?
+          En este club exploraremos el mundo del bajo costo, el open-source y el prototipado rápido. Diseñaremos dispositivos económicos para personas en situación de discapacidad fáciles de replicar y abiertos al mundo.
+
         </div>
       </div>
+
+
+        <div class="clubScz" (click)="isCollapsed[16] = !isCollapsed[16]">
+          <div>
+            <div class="club-titulo">
+              Club 17: Competencia por la vida
+            </div>
+            <div class="club-instructor">
+              Instructor: Felipe Navarrete (Ohana Biosciences)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsed[16]">
+            En este club discutiremos la lucha del espermatozoide por llegar al ovulo y como la selección natural incorpora los genes más competentes para la subsistencia de la vida y el mejoramiento genetico. Veremos la teoría sobre los cambios que el espermatozoide tiene que pasar para poder estar competente y fertilizar el ovulo: desarrollo, maduración y selección uterina. Luego discutirimeos los grandes avances en reproducción asistida desde un punto de vista histórico y  como aplicarlas para el mejoramiento genético de la industria bovina en países en vía de desarrollo.
+            En la parte experimental, los estudiantes aprenderan tecnicas de capacitación espermática, incluyendo medios de capacitación en espermatozoides de bovino. Veremos temas como la capacitación espermática de forma molecular lo cual desde la extracción proteica hasta el desarrollo de membranas con el objetivo es descrubrir marcadores de capacitación espermática.
+          </div>
+        </div>
     </div>
     </div>
 
-    <div *ngIf="!showScz">
-      <h1>Clubes version 2019 </h1>
+    <div *ngIf="showDC">
+      <h1>Clubes 4ta Edición </h1>
       <h2 class="descripcion-talleres">
-        Talleres intensivos de 5 días basados en proyectos
+        Talleres intensivos basados en proyectos
         dictados por expertos en los temas,
         quienes estaran presente en Washington DC para inspirar a la siguiente generación de científicos
         y emprendedores Bolivianos.
@@ -300,10 +321,11 @@
 
       <div class="clubes">
         <h2>Washington D.C.</h2>
+        <h4>Dale click al club que te interese!</h4>
         <div class="clubDC" (click)="isCollapsedDC[0] = !isCollapsedDC[0]">
           <div>
             <div class="club-titulo">
-              Diseñándose para crear
+              Club 1: Diseñándose para crear
             </div>
             <div class="club-instructor">
               Instructor: Wilson Claure (Georgetown University)
@@ -320,7 +342,7 @@
         <div class="clubDC" (click)="isCollapsedDC[1] = !isCollapsedDC[1]">
           <div>
             <div class="club-titulo">
-              Mirando al mundo desde los ojos de un científico social
+              Club 2: Mirando al mundo desde los ojos de un científico social
             </div>
             <div class="club-instructor">
               Instructor: Bruno Lopez Videla (University of California San Diego)
@@ -335,7 +357,7 @@
         <div class="clubDC" (click)="isCollapsedDC[2] = !isCollapsedDC[2]">
           <div>
             <div class="club-titulo">
-              Robot social del futuro
+              Club 3: Robot social del futuro
             </div>
             <div class="club-instructor">
               Instructor: Houston Claure (Cornell University)
@@ -365,7 +387,7 @@
         <div class="clubDC" (click)="isCollapsedDC[3] = !isCollapsedDC[3]">
           <div>
             <div class="club-titulo">
-              ¿Cómo nuestro sistema inmune nos defiende del cáncer?
+              Club 1: ¿Cómo nuestro sistema inmune nos defiende del cáncer?
             </div>
             <div class="club-instructor">
               Instructor: Omar Gandarilla (Harvard Medical School)
@@ -383,12 +405,12 @@
   <section id="como-aplicar" class="container">
     <h1>Como aplicar</h1>
     <h2 class="descripcion-talleres">
-      La convocatoria empieza el 6 de Agosto, habilitada por 30 dias. Alumnos pueden aplicar por medio de esta página en el boton de arriba que dice "Aplica CdeCBo".     </h2>
-      <h2 class="descripcion-talleres">
-      No lo olvides!
-      </h2>
+      Los Alumnos pueden aplicar a los clubes hasta el 30 de septiembre haciendo click en: </h2>
+    <a href="https://cdecbo.typeform.com/to/BO2nhR">
+      <button class="btn btn-success">Aplica ya!</button>
+    </a>
 
-    </section>
+  </section>
 
   <section id="patrocinadores" class="container">
     <div class="grupo-patrocinadores" style="border-bottom: solid lightgray 1px">
