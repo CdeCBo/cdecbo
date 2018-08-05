@@ -32,7 +32,7 @@ section {
 
 }
 
-#clubes {
+.clubes {
   padding-top: 50px;
   padding-bottom: 50px;
   opacity: 1;
@@ -47,12 +47,37 @@ section {
   }
 }
 
-.club {
-  padding-bottom: 20px;
+.clubScz {
+  padding: 20px;
+  background-color: #61b674;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+.clubDC {
+  padding: 20px;
+  background-color: #ce454e;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .club-titulo {
-  color: #1f1f1f;
+  color:  white;
+  font-size: 30px;
+  //color: #1f1f1f;
 }
+
+.club-instructor {
+  color: white;
+}
+
+.club-descripcion {
+  margin-top: 20px;
+  color: white;
+  //background-color: whitesmoke;
+}
+
 .descripcion-talleres {
   padding: 20px 0 20px 0;
   font-weight: 300;
@@ -103,4 +128,11 @@ section {
       width: 300px;
     }
   }
+}
+
+
+.collapsing {
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }

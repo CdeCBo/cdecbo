@@ -1,21 +1,24 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
 <a class="navbar-brand" [routerLink]="['']">
-<img src="./../assets/iconsmall.png" />
+  <div class="row">
+    <a class="navbar-brand col">
+      <img class="logo" src="/assets/cdecbologo1.png">
+      <span class="col"> </span>
+      <img class="logo" src="/assets/cdecboLogo.png">
+    </a>
+  </div>
 </a>
 <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" style="cursor: pointer;" id="navbarSupportedContent" [collapse]=isCollapsed>
-<ul class="navbar-nav ml-auto">      
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" style="cursor: pointer;" (click)="dropdownCollapsed = !dropdownCollapsed" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Eventos Principales
-</a>
-<div class="dropdown-menu" [collapse]=dropdownCollapsed aria-labelledby="navbarDropdownMenuLink">
-<a class="dropdown-item" [routerLink]="['cdecbo']" (click)="dropdownCollapsed = !dropdownCollapsed">CdecBo</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" [routerLink]="['hackbo']" (click)="dropdownCollapsed = !dropdownCollapsed">HackBo</a>
-</div>
+<ul class="navbar-nav ml-auto">
+
+<li class="nav-item">
+<a class="nav-link" [routerLink]="['cdecbo']" >CdecBo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" [routerLink]="['hackbo']">HackBo</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" [routerLink]="['testimonios']">Testimonios</a>
@@ -24,7 +27,7 @@ Eventos Principales
 <a class="nav-link" [routerLink]="['faq']">Preguntas Frecuentes</a>
 </li>
 <li class="nav-item">
-<a class="nav-link important-btn" href="https://cdecbo.typeform.com/to/jDxP1F">Aplica HackBo</a>
+<a class="nav-link important-btn" href="https://cdecbo.typeform.com/to/BO2nhR">Aplica CdeCBo</a>
 </li>
 </ul>
 </div>

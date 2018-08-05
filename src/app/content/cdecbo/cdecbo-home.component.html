@@ -8,161 +8,375 @@
   </section>
 
   <section id="losclubes" class="container">
-    <h1>Los Clubes</h1>
-    <h2 class="descripcion-talleres">
-      Talleres intensivos de 5 días basados en proyectos
-      dictados por expertos mundiales en los temas,
-      quienes vienen a Bolivia a inspirar a la siguiente generación de científicos
-      y emprendedores.
-    </h2>
-
-    <div id="clubes">
-      <h2>Clubes 2018</h2>
-      <div class="club">
-        <div class="club-titulo">
-          Diseñándose para crear
+    <div class="row justify-content-center" style="padding-top: 50px">
+      <div class="col-sm-6 col-12">
+        <div>
+          <img (click)="showClub('scz')" style="height: 200px; cursor: pointer" src="assets/cdecboSantaCruz.png">
         </div>
-        <div class="club-descripcion">
-          Instructor: Wilson Claure (Stanford University)
-        </div>
+        <button (click)="showClub('scz')" class="btn btn-success">Clubes Santa Cruz</button>
       </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Mirando al mundo desde los ojos de un científico social
+      <div class="col-sm-6 col-12">
+        <div>
+          <img (click)="showClub('dc')" style="height: 200px; cursor: pointer" src="assets/cdecboWashington.png">
         </div>
-        <div class="club-descripcion">
-          Instructor: Bruno Lopez Videla (University of California San Diego)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          ¿Qué Pasó?: Percepciones, Neurogénesis, y Manipulación Cerebral
-        </div>
-        <div class="club-descripcion">
-          Instructor: Giovanni Carosso (Johns Hopkins University)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Bioinformática y Minería de Datos
-        </div>
-        <div class="club-descripcion">
-          Instructor: Pablo Ortiz (Yale University)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Aumentando nuestro sistema sensorial con tecnología
-        </div>
-        <div class="club-descripcion">
-          Instructor: Thomas Sanchez Lengeling (Massachusetts Institute of Technology)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Reescribiendo la vida
-        </div>
-        <div class="club-descripcion">
-          Instructor: Leonardo Ferreira (University of California San Francisco)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Modelando al Interior del Cuerpo Humano
-        </div>
-        <div class="club-descripcion">
-          Instructor: Sebastian Torres (Laboratorio de Co-creacion en Salud)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Big Data e Inteligencia Artificial aplicados a nuestra vida
-        </div>
-        <div class="club-descripcion">
-          Instructor: Miguel Pelaez (Tecnatom SA)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Combatiendo epidemias
-        </div>
-        <div class="club-descripcion">
-          Instructor: David Soeiro (Universidade Federal de Minas Gerais)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Herramientas genéticas para entender enfermedades neurologicas
-        </div>
-        <div class="club-descripcion">
-          Instructora: Dalila Ordonez (Harvard University)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          La tecnología se encuentra con los negocios
-        </div>
-        <div class="club-descripcion">
-          Instructor: Pablo Contreras (Salesforce)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Moléculas y Bacterias: Explorando el potencial del microbioma
-        </div>
-        <div class="club-descripcion">
-          Instructor: Soad Bohorquez (Harvard Medical School)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Talento estratégico: mujeres + ciencia + liderazgo transformacional
-        </div>
-        <div class="club-descripcion">
-          Instructora: Paola Hernandez (Keck Graduate Institute)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          De micro a macro: principios de microscopía
-        </div>
-        <div class="club-descripcion">
-          Instructora: Diana Alatriste (Berlin University of Medicine)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Trasplantes celulares para curar la diabetes
-        </div>
-        <div class="club-descripcion">
-          Instructor: Christian Schuetz (Massachusetts General Hospital)
-        </div>
-      </div>
-
-      <div class="club">
-        <div class="club-titulo">
-          Hacking Medicine Bolivia - HackMedBo 2.0
-        </div>
-        <div class="club-descripcion">
-          Instructor: Juan Sebastián Osorio (GEMEDCO SAS y HumaneX)
-        </div>
+        <button (click)="showClub('dc')" class="btn btn-danger">Clubes Washington D.C.</button>
       </div>
     </div>
 
+    <div *ngIf="showScz">
+      <h1>Clubes 2019</h1>
+      <h2 class="descripcion-talleres">
+        Talleres intensivos de 5 días basados en proyectos
+        dictados por expertos mundiales en los temas,
+        quienes vienen a Bolivia a inspirar a la siguiente generación de científicos
+        y emprendedores.
+      </h2>
+
+      <div class="clubes">
+      <h2>Santa Cruz de la Sierra</h2>
+      <div class="clubScz" (click)="isCollapsed[0] = !isCollapsed[0]">
+        <div>
+          <div class="club-titulo">
+            Diseñándose para crear
+          </div>
+          <div class="club-instructor">
+            Instructor: Wilson Claure (Georgetown University)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[0]">
+          El objetivo principal de este curso es preparar a los estudiantes para la resolución de problemas complejos y modernos a través de Design Thinking. Se llevarán a cabo varias actividades de creación para desarrollar el pensamiento de diseñador en los participantes y para practicar Design Thinking. Durante la semana habrá un “Design Challenge” donde aplicaremos los métodos a la resolución de problemas pertinentes a la sociedad Boliviana como la creación de ciudades de conocimiento, y un aeropuerto hub. Paralelamente, los estudiantes aprenderán a evaluar científicamente el rendimiento de equipos de Design Thinking con herramientas creadas en Stanford.
+          El trabajo en equipo es necesario para el éxito con Design Thinking. Estos equipos son grupos multidisciplinarios (científicos, ingenieros, artistas) que colaboran para crear nuevos productos o soluciones en diferentes áreas (industria o ambiente académico). En el pasado, una limitación para la investigación científica de estos equipos era la falta de algún instrumento de medida, que sea fiable y repetible, para evaluar el rendimiento de los equipos. Con el desarrollo de IDN Tool en Stanford, ahora se puede investigar científicamente, evaluar el rendimiento, e identificar las áreas de mejora de equipos de Design Thinking. En el club de ciencias “Diseñándose para crear” re-crearemos este novedoso instrumento (hardware + Python), y así, los estudiantes aprenderán a usarlo para investigaciones de Design Thinking.
+          Finalmente, el curso está estructurado alrededor de proyectos. Esto significa que los estudiantes recibirán proyectos en los que trabajarán en equipos, y los instructores actuarán como entrenadores. Además, habrá mucha discusión a lo largo del club, y oportunidades para comunicarse con múltiples expertos en el campo de Design Thinking y con líderes Bolivianos en los campos de tecnología, aeronáutica, y academia. Finalmente, se visitará un lugar pertinente al proyecto, para exponer a los participantes al ámbito del problema que resolverán.
+
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[1] = !isCollapsed[1]">
+        <div>
+          <div class="club-titulo">
+            Mirando al mundo desde los ojos de un científico social
+          </div>
+          <div class="club-instructor">
+            Instructor: Bruno Lopez Videla (University of California San Diego)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[1]">
+          ¿Cómo podemos anticipar si una política pública, un programa social, o un proyecto de innovación, cumplirán con su propósito? ¿Cómo podemos utilizar fenómenos climatológicos para estudiar la adaptación en las expectativas de los agricultores? ¿Se puede experimentar como científicos sociales fuera de un laboratorio? En este club se responderán este tipo de preguntas. Además, los estudiantes aprenderán técnicas para poder identificar efectos causales que les servirán para evaluar fenómenos sociales y predecir el comportamiento de agentes económicos. Este curso presentará temas como: quasi-experimentos sociales, ensayos controlados aleatorios, experimentos de campo, y otros. Al finalizar el club, los estudiantes serán capaces de diferenciar correlaciones de efectos causales, y contarán con las técnicas necesarias para evaluar científicamente proyectos de impacto social.
+          Prerrequisito: Este curso requiere un nivel intermedio o avanzado en matemáticas y estadísticas.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[2] = !isCollapsed[2]">
+        <div>
+          <div class="club-titulo">
+            Neurociencia Regenerativa
+          </div>
+          <div class="club-instructor">
+            Instructor: Giovanni Carosso (Johns Hopkins University)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[2]">
+          Durante la mayor parte del siglo XX existía en neurociencia el dogma que las redes neurales no cambian después del nacimiento. Santiago Ramon y Cajal nos decía que en este sentido que “Todo puede morir, nada puede regenerarse”. En los últimos años, numerosos estudios científicos han comenzado a revertir esta noción- incluso en los seres humanos. De hecho, hoy en día tenemos evidencia extensa que la neurogénesis adulta figura de manera prominente en nuestras memorias, y que se ve modificada por las condiciones ambientales como el ejercicio físico, el aprendizaje, y también los fármacos. Como todo en la naturaleza, este proceso no es perfecto y defectos en el mismo contribuyen al desarrollo de varios trastornos neuropsicológicos. En este curso se discutirán las implicaciones de este fascinante y polémico proceso, y se explotará la capacidad de permeabilidad cerebral para controlar las acciones físicas de organismos modelos.
+          Prerrequisito: Este curso requiere un conocimiento intermedio o avanzado del idioma inglés.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[3] = !isCollapsed[3]">
+        <div>
+          <div class="club-titulo">
+            Combatiendo epidemias
+          </div>
+          <div class="club-instructor">
+            Instructor: David Soeiro (Universidade Federal de Minas Gerais)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[3]">
+          Este club utilizará casos reales para discutir la metodología científica detrás de estudios epidemiológicos. Estudiaremos como las distintas poblaciones han sufrido y enfrentado distintos problemas de salud en el pasado y como lo hacen en el presente. Algunas de las preguntas que debatiremos incluyen: ¿Por qué es importante estudiar epidemiologia? ¿Por qué las personas se enferman y mueren? ¿Qué hacer cuando afrontamos una epidemia? ¿Qué deberíamos tomar en cuenta cuando hacemos un estudio epidemiológico? También nos enfocaremos en la “Epidemia Invisible”, enfermedades no transmisibles. Para el laboratorio, hemos preparados varias prácticas que incluyen análisis de datos en Tuberculosis, Zika y Microcefalia, como también modelos computacionales de epidémicas infeccionas y no transmisibles. Finalmente discutiremos investigaciones en epidemias de conferencistas invitados.
+
+          Prerrequisito: Este curso requiere un nivel básico de inglés o portugués.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[4] = !isCollapsed[4]">
+        <div>
+          <div class="club-titulo">
+            La tecnología se encuentra con los negocios
+          </div>
+          <div class="club-instructor">
+            Instructor: Pablo Contreras (Salesforce)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[4]">
+          En este club los alumnos desarrollarán una solución tecnología aplicada a un reto de negocios real. Al terminal el curso, los estudiantes desarrollaran un prototipo que en teoría sea realizable y un "pitch" de la idea. Se tocarán temas de innovación, tecnología y negocios tales como lean startup, disruptive & sustaining innovation, design thinking, reverse innovation, fast prototyping y business model canvas. Además, se tocarán temas tales como crear un plan de negocios, formación de equipos multidisciplinarios y como validar ideas de negocios tecnológicos.
+          Prerrequisito: Este curso requiere un nivel básico de inglés.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[5] = !isCollapsed[5]">
+        <div>
+          <div class="club-titulo">
+            De micro a macro: principios de microscopía
+          </div>
+          <div class="club-instructor">
+            Instructora: Diana Alatriste (Berlin University of Medicine)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[5]">
+          Existen universos paralelos que están alrededor de nosotros, mundos de asombrosa complejidad. Unos muy pequeños, otro muy lejanos. Ambos imposibles de ver con nuestros ojos, pero existen herramientas que nos acerca demasiado. En este club aprenderemos la importancia de los instrumentos de observación y las ventajas que ofrecen las distintas técnicas de microscopía existentes. Nos adentraremos en la evolución de la microscopía, así como en los nuevos avances tecnológicos en este campo. Aprenderemos también los principios de fluorescencia y sus aplicaciones en la biología. En la práctica, los estudiantes construirán su propio microscopio, aprenderán a montar muestras biológicas y visitarán un telescopio, todo ello con el fin ampliar su comprensión acerca de las leyes de la óptica y de fomentar el uso de estas herramientas para la resolución y comprensión de fenómenos cuyo origen y desarrollo aun son desconocidos.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[6] = !isCollapsed[6]">
+        <div>
+          <div class="club-titulo">
+            De la anatomía al diseño
+          </div>
+          <div class="club-instructor">
+            Instructor: Sebastián Torres Montoya (Hospital General de Medellín)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[6]">
+          La capacidad de producir modelos anatómicos que contengan enfermedades reales manifestadas en pacientes, permite crear una gran variedad de situaciones fisiológicas, que permiten innovar en tratamientos médicos sobre pacientes. Los estudios en seres vivos son riesgosos y como una alternativa menos invasiva, la simulación in sílico y la construcción de biomodelos tridimensionales, se muestra como opciones claves para facilitar el estudio de diversas enfermedades humanas. En este curso aprenderemos sobre técnicas computacionales que nos permitan construir, simular y validar modelos anatómicos cada vez más cercanos a la realidad del paciente, a partir de imágenes médicas provenientes de Resonancia Magnética (RM) y Tomografía Axial Computarizada (TAC) mediante software de licencia abierta. El propósito de este curso es desarrollar una metodología utilizando herramientas como ingeniería inversa, tales como la segmentación de imágenes médicas DICOM, la reconstrucción de modelos Asistidos por Computador (CAD), prototipado rápido por impresión 3D y las simulaciones mediante Dinámica de Fluidos Computacional(CFD) y elementos finitos (FEM).
+          ¿Te has preguntado cómo funcionan en armonía los sistemas del cuerpo humano?
+          ¡Pues en este club de cinco días lo descubrirás!
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[7] = !isCollapsed[7]">
+        <div>
+          <div class="club-titulo">
+            Diseño de proteínas: creando soluciones para la sociedad del mañana
+          </div>
+          <div class="club-instructor">
+            Instructor: Oscar Hernández Murillo (Harvard University)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[7]">
+          La diversidad de estructuras y funciones de proteínas en la naturaleza ha inspirado a los científicos a diseñar sus propias proteínas con nuevas funciones o propiedades. Este club introducirá los principios básicos detrás del diseño de proteínas, y métodos experimentales y computacionales típicamente utilizados en esta joven disciplina. Utilizando la levadura como un simple modelo organismo, los estudiantes tendrán la oportunidad de llevar a cabo experimentos para determinar como una proteína con potencial terapéutico para las enfermedades neurodegenerativas puede ser modificada para mejorar sus propiedades. Adicionalmente, los estudiantes aprenderán a usar recursos bioinformáticos que facilitan el análisis estructural y evolutivo de proteínas, y que son comúnmente utilizados para guiar el rediseño de proteínas. Por último, hablaremos de los recientes y futuros avances en el campo de ingeniería de proteínas, y de cómo el diseño de nuevas proteínas nos ayudará a resolver problemas en medicina, biotecnología, conservación del medio ambiente, y mucho más.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[8] = !isCollapsed[8]">
+        <div>
+          <div class="club-titulo">
+            Big Data: Visualización & Modelos
+          </div>
+          <div class="club-instructor">
+            Instructor: Abel de Andreis (Google)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[8]">
+          En este curso aprenderemos a usar los datos para ver lo que nadie ve en ellos. Para esto tendremos que lograr identificar un dataset relevante, limpiarlo y visualizarlo. Veremos aplicaciones en deportes, salud y otras como PokemonGo, aunque ¡podrás aplicarlo al ámbito que quieras! Es increíble pensar que este campo se basa en muchas disciplinas, como estadística, programación y matemáticas pero, lo único que en realidad necesitas es: ¡sentido común! Vamos a lograr un equilibrio entre la teoría y las aplicaciones de la vida real como: ¿Quien ganará el próximo mundial? ¿Cuál es el mejor precio para un vuelo y cuando debo comprarlo? ¿Podríamos predecir (y con ello regular) el siguiente brote de una epidemia? ¿Cuando ocurrirá el siguiente Pokemon spawn?
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[9] = !isCollapsed[9]">
+        <div>
+          <div class="club-titulo">
+            Bioprospeccion: ¿El futuro de los fármacos?
+          </div>
+          <div class="club-instructor">
+            Instructora: Elisa Chaparro (Del lab al campo)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[9]">
+          La bioprospección hace parte de nuestro día a día, solo que no lo sabemos. Por medio de clases teóricas y prácticas, se les mostrará a los estudiantes la importancia y las diferentes aplicaciones de la bioprospección y como esta puede ser una herramienta para el manejo sostenible de los recursos naturales. La prospección de moléculas con alguna actividad biológica provenientes de plantas y algunos venenos de animales, han inspirado la protección de estos en diferentes regiones del mundo, ya que, estas moléculas pueden tener diferentes aplicaciones y por tanto presentan un importante interés económico e investigativo. En este club nos centraremos en como las plantas pueden tener moléculas con actividades antibióticas, y por esto, podrían ser usadas como posibles principios activos para el desarrollo de nuevos fármacos, los cuales puedan combatir la creciente resistencia de los microorganismos a las bacterias. Al usar plantas que pueden ser encontradas fácilmente en su entorno, pretendemos que los estudiantes vean en cosas de su día a día, una fuente infinita de conocimiento e investigación y así mostrarles como la bioprospección puede ser una fuente para nuevos antibióticos y productos biotecnológicos.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[10] = !isCollapsed[10]">
+        <div>
+          <div class="club-titulo">
+            Explorando el Cáncer
+          </div>
+          <div class="club-instructor">
+            Instructora: Yara Rodríguez (Northwestern University)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[10]">
+          ¿Quieres aprender acerca de cómo las células del cuerpo se vuelven cancerígenas? ¿Te gustaría experimentar el día a día de un científico que investiga cómo combatir el cáncer? Entonces ¡únete a nuestro club! Cada tipo de cáncer es único debido a las distintas mutaciones que lo caracterizan. Al identificar que mutaciones tiene cada paciente, podemos saber de qué medicamentos se puede beneficiar este paciente. Esta es la base de la medicina personalizada; cada paciente recibe un tratamiento basado en su perfil genético. Durante el club, los estudiantes se pondrán en el lugar de un científico y usarán células cancerígenas provenientes de humanos para estudiar un gen en particular. Utilizando técnicas de biología molecular y cultivos celulares, los estudiantes serán los encargados de identificar cuál de los pacientes contiene una mutación en este gen. Partiendo de los resultados que obtengan durante el club, plantearan sus propias hipótesis acerca de que paciente es un buen candidato para ser tratado con un medicamento. Si te interesa la biomedicina y te apasiona jugar a ser detective: ¡este es el club para ti!
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[11] = !isCollapsed[11]">
+        <div>
+          <div class="club-titulo">
+            Robot social del futuro
+          </div>
+          <div class="club-instructor">
+            Instructor: Houston Claure (Cornell University)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[11]">
+          Tradicionalmente, robots son usados en entornos industriales levantando
+          materiales pesados, haciendo trabajos repetitivos o talvez peligrosos.
+          Actualmente hay un empuje de la ciencia  para el desarrollo de un
+          nuevo tipo de robots conocidos como robots sociales, los cuales son
+          creados para nuevas situaciones como: trabajando lado a lado con
+          humanos en la casa, en los hospitales, y también en los colegios. Para
+          soportar este avance, es importante investigar cómo crear y programar
+          robots para que interactúen en estos ambientes y también entender como
+          los humanos interactúan con robots. La clase “Robot Social del Futuro”
+          será una introducción al campo de Human-Robot Interacción (HRI), donde
+          estudiantes aprenderán sobre las investigaciones actuales con robots
+          personales, los algoritmos de inteligencia artificial, y como
+          desarrollar experimentos con humanos y robots. Al fin de este curso
+          los estudiantes tendrán un conocimiento más profundo sobre el campo de
+          Human Robot Interaction (HRI), entenderán más sobre la inteligencia
+          artificial, y finalmente   crearán  sus propios robots para examinar y
+          tener la experiencia de cómo la gente trabaja con su robot.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[12] = !isCollapsed[12]">
+        <div>
+          <div class="club-titulo">
+            Desarrollando habilidades para Bioemprender
+          </div>
+          <div class="club-instructor">
+            Instructora: Lilian Gonzalez (Technological University of Berlin)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[12]">
+          Gracias a los grandes avances que se han producido en las tecnologías informáticas -desde la robótica industrial mejorada hasta los servicios de traducción automáticos- muchos puestos de trabajo se han visto afectados reduciendo drásticamente el número de empleos en países desarrollados. Es por ello, que una de las opciones de esta nueva era es promover la educación con un enfoque más creativo, donde los jóvenes desarrollen un espíritu empresarial de liderazgo y cuenten con una visión que les permita reconocer y explotar de mejor manera las oportunidades del mercado.
+          En este club exploraremos y entenderemos mejor el mundo del bioemprendedor, donde por medio de la teoría básica de la biología sintética y bioingeniería conoceremos todas las soluciones innovadoras que han sido y están siendo desarrolladas por empresarios jóvenes científicos. Por otra parte complementaremos este club abordando conceptos básicos de emprendimiento, que permitan comprender cómo funcionan las estrategias de creación de una empresa, la búsqueda de financiamiento, así como el desarrollo de la propiedad intelectual. Para tener ejemplos más concretos, contaremos con invitados especiales de Bolivia, Colombia y México, que compartirán con nosotros su experiencia en la creación y desarrollo actual de sus empresas.
+          Para finalizar este club los estudiantes trabajarán en una dinámica de grupo denominada “Biohackaton”, donde a cada grupo se le asignará un desafío o problema actual del área de sustentabilidad, ambiental y medicina, con el objetivo de que cada grupo desarrolle y proponga una alternativa innovadora para abordar dicho desafío en el mercado. Los resultados serán presentados a los otros clubes el último día en la feria científica.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[13] = !isCollapsed[13]">
+        <div>
+          <div class="club-titulo">
+            Aplicación de la tecnología del ADN recombinante
+          </div>
+          <div class="club-instructor">
+            Instructora: Soad Bohorquez (Harvard Medical School)
+          </div>
+        </div>
+          <div class="club-descripcion" [collapse]="isCollapsed[13]">
+            La biotecnología es el uso o la manipulación de un organismo o los componentes de un organismo. Los orígenes de la biotecnología se remontan a cuando las personas comenzaron a domesticar animales y cultivar alimentos. Aunque estas primeras aplicaciones todavía se usan actualmente, la biotecnología moderna se asocia principalmente con la biología molecular, la clonación y la ingeniería genética. La ingeniería genética (modificación genética o manipulación genética), es usada para muchos propósitos diferentes en la medicina, industria, agricultura e investigación. Esta tecnología permite la creación de múltiples copias de genes y la inserción de genes extraños a otros organismos para darles nuevos rasgos, como por ejemplo resistencia a los antibióticos o un color nuevo. Este curso está diseñado para proporcionar a los estudiantes un fondo teórico y un conocimiento práctico de la instrumentación y las técnicas empleadas en un laboratorio de biotecnología. El curso se centrará principalmente en la introducción de ADN extraño en células de Escherichia Coli, así como, en el análisis de ADN. Esto introducirá a los estudiantes el rol importante que ciertas células microbianas tienen en la producción de proteínas para el uso terapéutico, tratamiento de enfermedades, vacunas, y para mejorar la resistencia de plantas a las plagas
+          </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[14] = !isCollapsed[14]">
+        <div>
+          <div class="club-titulo">
+            Descubriendo el cerebro humano a través de la secuenciación
+          </div>
+          <div class="club-instructor">
+            Instructora: Beatriz Alvarado (University of California San Francisco)
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[14]">
+          La secuenciación de ADN/ARN de próxima generación ha transformado la forma en que las investigaciones genéticas son realizadas y ha facilitado la obtención de información genómica y transcriptómica. Más recientemente, avances en tecnología de secuenciación de células individuales nos ha permitido interrogar el perfil transcripcional de células dentro de tejidos a una resolución nunca antes imaginada. Esta metodología nos permite tener nuevas perspectivas en la diversidad de células que antes considerábamos homogéneas. En este club exploraremos cómo las nuevas tecnologías en secuenciación de células individuales pueden ser utilizadas para estudiar el desarrollo del cerebro humano. Usando sets de datos públicos, los estudiantes aprenderán a descubrir nuevos tipos de células en tejidos complejos como el cerebro humano y discutirán cómo esta tecnología ha ayudado a responder preguntas difíciles dentro de la Biología. Finalmente, hablaremos de los recientes avances en la secuenciación de células individuales y cómo esta tecnología continúa mejorando el futuro de la investigación.
+        </div>
+      </div>
+
+      <div class="clubScz" (click)="isCollapsed[15] = !isCollapsed[15]">
+        <div>
+          <div class="club-titulo">
+            nn
+          </div>
+          <div class="club-instructor">
+            Instructor: Daniel Cuartas
+          </div>
+        </div>
+        <div class="club-descripcion" [collapse]="isCollapsed[15]">
+          nn
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div *ngIf="!showScz">
+      <h1>Clubes 2019 </h1>
+      <h2 class="descripcion-talleres">
+        Talleres intensivos de 5 días basados en proyectos
+        dictados por expertos mundiales en los temas,
+        quienes vienen a Bolivia a inspirar a la siguiente generación de científicos
+        y emprendedores.
+      </h2>
+
+      <div class="clubes">
+        <h2>Washington D.C.</h2>
+        <div class="clubDC" (click)="isCollapsedDC[0] = !isCollapsedDC[0]">
+          <div>
+            <div class="club-titulo">
+              Diseñándose para crear
+            </div>
+            <div class="club-instructor">
+              Instructor: Wilson Claure (Georgetown University)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsedDC[0]">
+            El objetivo principal de este curso es preparar a los estudiantes para la resolución de problemas complejos y modernos a través de Design Thinking. Se llevarán a cabo varias actividades de creación para desarrollar el pensamiento de diseñador en los participantes y para practicar Design Thinking. Durante la semana habrá un “Design Challenge” donde aplicaremos los métodos a la resolución de problemas pertinentes a la sociedad Boliviana como la creación de ciudades de conocimiento, y un aeropuerto hub. Paralelamente los estudiantes aprenderán a evaluar científicamente el rendimiento de equipos de Design Thinking con herramientas creadas en Stanford.
+            El trabajo en equipo es necesario para el éxito con Design Thinking. Estos equipos son grupos multidisciplinarios (científicos, ingenieros, artistas) que colaboran para crear nuevos productos o soluciones en diferentes áreas (industria o ambiente académico). En el pasado, una limitación para la investigación científica de estos equipos era la falta de algún instrumento de medida, que sea fiable y repetible, para evaluar el rendimiento de los equipos. Con el desarrollo de IDN Tool en Stanford, ahora se puede investigar científicamente, evaluar el rendimiento, e identificar las áreas de mejora de equipos de Design Thinking. En el club de ciencias “Diseñándose para crear” re-crearemos este novedoso instrumento (hardware + Python) y así los estudiantes aprenderán a usarlo para investigaciones de Design Thinking.
+            Finalmente, el curso está estructurado alrededor de proyectos. Esto significa que los estudiantes recibirán proyectos en los que trabajarán en equipos, y los instructores actuarán como entrenadores. Además, habrá mucha discusión a lo largo del club, y oportunidades para comunicarse con múltiples expertos en el campo de Design Thinking y con líderes Bolivianos en los campos de tecnología, aeronáutica, y academia. Finalmente, se visitara un lugar pertinente al proyecto, para exponer a los participantes al ámbito del problema que resolverán.
+
+          </div>
+        </div>
+
+        <div class="clubDC" (click)="isCollapsedDC[1] = !isCollapsedDC[1]">
+          <div>
+            <div class="club-titulo">
+              Mirando al mundo desde los ojos de un científico social
+            </div>
+            <div class="club-instructor">
+              Instructor: Bruno Lopez Videla (University of California San Diego)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsedDC[1]">
+            ¿Cómo podemos anticipar si una política pública, un programa social, o un proyecto de innovación, cumplirán con su propósito? ¿Cómo podemos utilizar fenómenos climatológicos para estudiar la adaptación en las expectativas de los agricultores? ¿Se puede experimentar como científicos sociales fuera de un laboratorio? En este club se responderán este tipo de preguntas. Además, los estudiantes aprenderán técnicas para poder identificar efectos causales que les servirán para evaluar fenómenos sociales y predecir el comportamiento de agentes económicos. Este curso presentará temas como: quasi-experimentos sociales, ensayos controlados aleatorios, experimentos de campo, y otros. Al finalizar el club, los estudiantes serán capaces de diferenciar correlaciones de efectos causales, y contarán con las técnicas necesarias para evaluar científicamente proyectos de impacto social.
+            Prerrequisito: Este curso requiere un nivel intermedio o avanzado en matemáticas y estadísticas.
+          </div>
+        </div>
+
+        <div class="clubDC" (click)="isCollapsedDC[2] = !isCollapsedDC[2]">
+          <div>
+            <div class="club-titulo">
+              Robot social del futuro
+            </div>
+            <div class="club-instructor">
+              Instructor: Houston Claure (Cornell University)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsedDC[2]">
+            Tradicionalmente, robots son usados en entornos industriales levantando
+            materiales pesados, haciendo trabajos repetitivos o talvez peligrosos.
+            Actualmente hay un empuje de la ciencia  para el desarrollo de un
+            nuevo tipo de robots conocidos como robots sociales, los cuales son
+            creados para nuevas situaciones como: trabajando lado a lado con
+            humanos en la casa, en los hospitales, y también en los colegios. Para
+            soportar este avance, es importante investigar cómo crear y programar
+            robots para que interactúen en estos ambientes y también entender como
+            los humanos interactúan con robots. La clase “Robot Social del Futuro”
+            será una introducción al campo de Human-Robot Interacción (HRI), donde
+            estudiantes aprenderán sobre las investigaciones actuales con robots
+            personales, los algoritmos de inteligencia artificial, y como
+            desarrollar experimentos con humanos y robots. Al fin de este curso
+            los estudiantes tendrán un conocimiento más profundo sobre el campo de
+            Human Robot Interaction (HRI), entenderán más sobre la inteligencia
+            artificial, y finalmente   crearán  sus propios robots para examinar y
+            tener la experiencia de cómo la gente trabaja con su robot.
+          </div>
+        </div>
+
+        <div class="clubDC" (click)="isCollapsedDC[3] = !isCollapsedDC[3]">
+          <div>
+            <div class="club-titulo">
+              ¿Cómo nuestro sistema inmune nos defiende del cáncer?
+            </div>
+            <div class="club-instructor">
+              Instructor: Omar Gandarilla (Harvard Medical School)
+            </div>
+          </div>
+          <div class="club-descripcion" [collapse]="isCollapsedDC[3]">
+            El sistema inmune nos defiende y combate muchos microbios, como los virus que causan el resfriado común o las bacterias que entran por las heridas. Nuestras defensas pueden también aprender a protegernos de situaciones más complejas y pueden hacerlo gracias a las lecciones aprendidas mediante la vacunación. Uno de estos ejemplos es como el virus de la polio puede enseñar al sistema inmune a reconocer y eliminar este virus de nuestro organismo en el caso de que quiera entrar a nuestro cuerpo y atacarnos. En años recientes los científicos han observado que el sistema inmune también puede atacar otro tipo de enfermedad, el cáncer. El cáncer ocurre cuando las células pierden el control y proliferan sin límites. La buena noticia es que podemos educar el sistema inmune en pacientes con cáncer, esto se llama inmunoterapia. En este curso aprenderemos como nuestras defensas pueden aprender a atacar y eliminar los microorganismos patógenos, así como también a eliminar el cáncer. A la vez verán en el componente practico como los linfocitos al reconocer el peligro organizan la defensa del organismo regulando señales dentro de ellos para prepararse para el contra-ataque.
+        </div>
+
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="como-aplicar" class="container">
