@@ -62,4 +62,15 @@ p{
 .expocruz {
   background-color: #fcfbfc;
   padding: 20px;
+  img {
+    height: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .expocruz {
+    img {
+      height: auto;
+      max-width: 90vw;
+    }
+  }
 }
