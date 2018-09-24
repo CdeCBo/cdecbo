@@ -11,6 +11,7 @@ export class CdecboHomeComponent implements OnInit {
   isCollapsedDC = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
   showScz = false;
   showDC = false;
+  showLpcTestimonio = false;
 
   showClub(lugar) {
     if (lugar === 'Scz') {

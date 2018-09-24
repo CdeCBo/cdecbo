@@ -1,15 +1,17 @@
 .user {
-    margin-top: 1em;
-    margin-left: 1em;
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+
+  display: inline-block;
+  min-width: 275px;
+  //height: 275px;
+  //margin-bottom: -7px;
+
+  background-repeat: no-repeat;
+  //background-position: center center;
+  background-size: cover;
+  //background-attachment: fixed;
+  background-position: center;
+
+}
   #misionbody{
     background-color: rgba(245, 245, 245, 0.4);
     p{
@@ -21,14 +23,15 @@
         margin-right: 1em;
     }
   }
-
-  h1{
-      margin-bottom: 2em;
+  section {
+    min-height: 700px;
+    //background-color: white;
   }
+
   .olm {
     background-image: url('./../../../assets/alum/olm.png');;
   }
-  
+
   .nmdo {
     background-image: url('./../../../assets/alum/nmdo.png');;
   }
@@ -60,3 +63,72 @@
   .sc {
     background-image: url('./../../../assets/alum/sc.png');;
   }
+
+
+.testimonio, .reversedTestimonio {
+  display: flex;
+  background-color: white;
+  margin-top: 40px;
+
+  //align-items: center;
+  box-shadow: 2px 2px 7px 1px rgba(32, 114, 36, 0.82);
+  .texto {
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;
+    padding: 50px;
+    line-height: 25px;
+    font-weight: bolder;
+    color: #535353;
+    .estudiante {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+  .reversedTestimonio {
+    flex-direction: column-reverse!important;
+  }
+  .testimonio {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .testimonio, .reversedTestimonio {
+    padding: 4px;
+    .texto {
+      font-size: 16px;
+      padding: 30px;
+      line-height: 20px;
+    }
+
+
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: none!important;
+  }
+}
+@media (max-width: 800px) {
+  .user {
+    display: inline-block;
+    min-width: 275px;
+    min-height: 275px;
+  }
+}
+
+
+.mainDiv {
+  background-color: #52bb6a;
+ }
+
+.titulo {
+  //color:transparent;
+  color: white;
+  font-size: 50px
+}

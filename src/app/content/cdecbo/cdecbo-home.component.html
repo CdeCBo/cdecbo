@@ -1,11 +1,14 @@
-<div style="min-height: 1000px; background-color: whitesmoke">
-  <section id="cdec" class="container">
+<div style="min-height: 1000px; background-color: #fbfbfb">
+<section id="cdec">
+  <div class="container">
     <img src="../../../assets/cdecboIsologotipo.png" style="width: 300px; border-radius: 100%">
       <h3 id="cdec-mision">
         Inspiramos a la siguiente generación de científicos y emprendedores Bolivianos conectándolos
         con científicos y emprendedores de instituciones líderes del mundo.
       </h3>
-  </section>
+  </div>
+
+</section>
 
   <section id="losclubes" class="container">
     <div class="row justify-content-center" style="padding-top: 50px">
@@ -418,14 +421,63 @@
 
   </section>
 
-  <section id="patrocinadores" class="container">
-    <div class="grupo-patrocinadores" style="border-bottom: solid lightgray 1px">
-      <h1>Patrocinadores Extranjeros</h1>
-      <img src="../../../assets/hackbo/patrocinadoresExtranjeros.png">
+<section id="testimonios" class="py-5">
+  <h1>Testimonios</h1>
+  <div class="container">
+
+    <div class="testimonio">
+      <!--<div>-->
+      <div class="user lpc"></div>
+      <!--</div>-->
+      <div class="texto textoConBoton">
+        <div class="verTestimonioCompleto"><button *ngIf="!showLpcTestimonio" (click)="showLpcTestimonio = true" class="btn btn-warning">Ver testimonio completo</button></div>
+
+        <div *ngIf="showLpcTestimonio">
+          "La primera vez que aplique a Clubes de Ciencia Bolivia me rechazaron, pero eso no me detuvo de aplicar la segunda vez.
+          Realmente anhelaba conocer los instructores, quienes eran científicos latinoamericanos, quería escuchar su trayectoria, consejos y aprender de
+          ellos al máximo. También deseaba conocer a los estudiantes de los diferentes clubes porque sabía que ellos tenían la misma pasión por las ciencias que yo.
+          ¡Así que cuando se realizó la segunda versión de Clubes de Ciencia Bolivia, aplique y me aceptaron! El hecho de perseverar para llegar a ese maravilloso evento fue gratificante.
+          Tuve la fortuna de participar dos veces en clubes de Ciencia, ambas oportunidades fueron espectaculares porque siempre sobrepasaban todas mis expectativas. Sin duda, clubes de ciencia ha sido una pieza fundamental en mi formación académica y personal.
+          Cada año es diferente en clubes porque siempre están innovando en los cursos y actividades. Este año pude conocer a muchos instructores quienes se volvieron prontamente mis amigos y consejeros. Gracias a ellos y a la familia cdc tuve la oportunidad de hacer una pasantías en Harvard, lo cual cambio mi vida por completo. Durante esta pasantías pude conocer a una mexicana que había sido parte de clubes de ciencia México, eso me demostró que al ser parte de la familia de clubes de ciencia puedes encontrarte con otros personas en el mundo que han compartido una experiencia clubera."
+        </div>
+        <div *ngIf="!showLpcTestimonio">
+          Cada año es diferente en clubes porque siempre están innovando en los cursos y actividades. Este año pude conocer a muchos instructores quienes se volvieron prontamente mis amigos y consejeros. Gracias a ellos y a la familia cdc tuve la oportunidad de hacer una pasantías en Harvard, lo cual cambio mi vida por completo. Durante esta pasantías pude conocer a una mexicana que había sido parte de clubes de ciencia México, eso me demostró que al ser parte de la familia de clubes de ciencia puedes encontrarte con otros personas en el mundo que han compartido una experiencia clubera."
+        </div>
+        <br>
+        <span class="estudiante">- Licyel Paulas Condori</span>
+      </div>
     </div>
-    <div class="grupo-patrocinadores">
-      <h1>Patrocinadores Locales</h1>
-      <img src="../../../assets/hackbo/patrocinadoresLocales.png">
+
+    <div class="reversedTestimonio">
+      <div class="texto">
+        "Participar de  Clubes de Ciencia Bolivia fue una experiencia maravillosa, pude conocer a jóvenes de mi edad amantes de la ciencia como yo. A través de los instructores aprendí que las barreras no existen cuando vas tras tus sueños y pasiones.
+        Este programa no solo me ayudó a decidir que voy a estudiar, sino que también me mostró las diferentes oportunidades que existen para ampliar mis conocimientos en el extranjero. Fue así decidí aplicar y obtuve el honor de representar a Bolivia en el National Youth Science Camp 2018, un campamento de ciencias en West Virginia, EE.UU. que me amplió aún más los horizontes.
+        De no ser por Clubes, creo que aún no tendría ni idea de qué estudiar y nunca habría encontrado esa pasión que siento por la ciencia, en especial la Biología."
+        <br>
+        <span class="estudiante">– Francesca Garafulic</span>
+      </div>
+      <!--<div>-->
+      <div class="user fg"></div>
+      <!--</div>-->
+    </div>
+
+    <div class="verMasTestimoniosDiv">
+
+      <button routerLink="/testimonios" class="btn btn-success">Ver más testimonios</button>
+    </div>
+  </div>
+</section>
+
+  <section id="patrocinadores">
+    <div class="container">
+      <div class="grupo-patrocinadores" style="border-bottom: solid lightgray 1px">
+        <h1>Patrocinadores Extranjeros</h1>
+        <img src="../../../assets/hackbo/patrocinadoresExtranjeros.png">
+      </div>
+      <div class="grupo-patrocinadores">
+        <h1>Patrocinadores Locales</h1>
+        <img src="../../../assets/hackbo/patrocinadoresLocales.png">
+      </div>
     </div>
   </section>
 

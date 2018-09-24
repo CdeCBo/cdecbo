@@ -2,10 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 body
 {
-  
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1em;
+
+    /*font-size: 16px;*/
+    /*font-weight: 300;*/
+    /*line-height: 1em;*/
 
     text-align: center;
     background-color: #444 ;
@@ -20,4 +20,3 @@ body
     background-size: cover;
     -o-background-size: cover;
   }
-  
