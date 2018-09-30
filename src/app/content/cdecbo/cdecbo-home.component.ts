@@ -12,6 +12,7 @@ export class CdecboHomeComponent implements OnInit {
   showScz = false;
   showDC = false;
   showLpcTestimonio = false;
+  showAtTestimonio = false;
 
   showClub(lugar) {
     if (lugar === 'Scz') {
