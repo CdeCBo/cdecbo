@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import {ActivatedRoute} from '@angular/router';
   templateUrl: './cdecbo-home.component.html',
   styleUrls: ['./cdecbo-home.component.scss']
 })
-export class CdecboHomeComponent implements OnInit {
+export class CdecboHomeComponent implements OnInit, AfterViewInit {
   isCollapsed = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
   isCollapsedDC = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true];
   showScz = false;
@@ -45,6 +45,9 @@ export class CdecboHomeComponent implements OnInit {
     } else {
       this.showScz = false;
     }
+  }
+  ngAfterViewInit() {
+    window.scrollTo(0, 0);
   }
 
 }
